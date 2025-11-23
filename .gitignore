@@ -7,3 +7,4 @@ build/
 node_modules/
 .DS_Store
 res/AccessKey.txt
+日记/
