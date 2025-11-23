@@ -1,0 +1,300 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <!-- 定义阴影效果 -->
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="avatarClip">
+      <circle cx="1148" cy="35" r="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- 全局背景 -->
+  <rect width="1200" height="750" fill="#F7F8FC"/>
+
+  <!-- 侧边栏 -->
+  <rect width="220" height="750" fill="#FFFFFF" filter="url(#shadow)"/>
+  
+  <!-- Logo -->
+  <g transform="translate(25 20)">
+    <circle cx="15" cy="15" r="15" fill="#2DCDA3"/>
+    <path d="M12 10 L18 10 L15 15 Z" fill="#FFFFFF"/>
+    <path d="M10 16 L20 16 L15 22 Z" fill="#FFFFFF" opacity="0.7"/>
+    <text x="40" y="21" font-size="18" font-weight="bold" fill="#303133">校园通后台</text>
+  </g>
+
+  <!-- 菜单 -->
+  <g font-size="15" fill="#303133" transform="translate(0 80)">
+    <!-- 主页 -->
+    <g transform="translate(20 0)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M20 16 h-4 a2 2 0 0 0 -2 2 v12 a2 2 0 0 0 2 2 h4z M22 16 h4 a2 2 0 0 1 2 2 v12 a2 2 0 0 1 -2 2 h-4z" fill="#909399" transform="translate(-15 1) scale(0.7)"/>
+      <text x="40" y="29">主页 / Dashboard</text>
+    </g>
+    <!-- 用户管理 -->
+    <g transform="translate(20 58)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M25 14 c2.76 0 5 2.24 5 5 s-2.24 5 -5 5 s-5 -2.24 -5 -5 s2.24 -5 5 -5z M25 26 c-5.33 0 -16 2.67 -16 8 v4 h32 v-4 c0 -5.33 -10.67 -8 -16 -8z" fill="#909399" transform="translate(-15 -2) scale(0.7)"/>
+      <text x="40" y="29">用户管理</text>
+    </g>
+    <!-- 角色管理 -->
+    <g transform="translate(20 116)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="#909399" transform="translate(0 10) scale(0.8)"/>
+      <text x="40" y="29">角色管理</text>
+    </g>
+    <!-- 消费记录 (Active) -->
+    <g transform="translate(20 174)">
+      <rect width="180" height="48" rx="8" fill="#E9FAF5"/>
+      <rect width="4" height="48" rx="2" fill="#2DCDA3"/>
+      <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" fill="#2DCDA3" transform="translate(-2 12) scale(0.9)"/>
+      <text x="40" y="29" fill="#2DCDA3" font-weight="600">消费记录查询</text>
+    </g>
+    <!-- 通知公告 -->
+    <g transform="translate(20 232)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="#909399" transform="translate(-2 12) scale(0.9)"/>
+      <text x="40" y="29">通知公告</text>
+    </g>
+  </g>
+
+  <!-- 主内容区 -->
+  <g transform="translate(220 0)">
+    <!-- 顶部栏 -->
+    <rect width="980" height="70" fill="#FFFFFF"/>
+    
+    <!-- 面包屑 -->
+    <text x="40" y="42" font-size="14" fill="#909399">
+      <tspan fill="#303133" font-weight="600">校园通</tspan> / <tspan>交易管理</tspan> / <tspan fill="#303133" font-weight="600">消费记录查询</tspan>
+    </text>
+
+    <!-- 右侧图标 -->
+    <g transform="translate(800 0)">
+        <!-- 通知 -->
+        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="#909399" transform="translate(250 18) scale(0.8)"/>
+        <circle cx="273" cy="23" r="4" fill="#F56C6C"/>
+        <!-- 用户头像 -->
+        <image href="https://i.pravatar.cc/32" width="32" height="32" clip-path="url(#avatarClip)"/>
+        <text x="1095" y="42" font-size="14" fill="#303133">小宇宙</text>
+    </g>
+    
+    <!-- 内容面板 -->
+    <g transform="translate(40 100)">
+      <rect width="900" height="610" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+      
+      <!-- 标题和操作 -->
+      <text x="30" y="50" font-size="20" font-weight="bold" fill="#303133">消费记录</text>
+      
+      <!-- 统计卡片 -->
+      <g transform="translate(30 80)">
+        <!-- 今日消费 -->
+        <rect width="200" height="80" rx="8" fill="#F7F8FC"/>
+        <g transform="translate(20 20)">
+          <circle cx="20" cy="20" r="20" fill="#E9FAF5"/>
+          <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#2DCDA3" transform="translate(4 4) scale(0.7)"/>
+          <text x="50" y="15" font-size="12" fill="#909399">今日消费</text>
+          <text x="50" y="35" font-size="20" font-weight="bold" fill="#303133">¥2,345</text>
+        </g>
+        
+        <!-- 本月消费 -->
+        <rect width="200" height="80" rx="8" fill="#F7F8FC" transform="translate(220 0)"/>
+        <g transform="translate(240 20)">
+          <circle cx="20" cy="20" r="20" fill="#FFF4E6"/>
+          <path d="M12 2l3.09 3.26L20 8.5l-5 5.5L5 16l3.5-9.5L12 2z" fill="#E6A23C" transform="translate(4 4) scale(0.7)"/>
+          <text x="50" y="15" font-size="12" fill="#909399">本月消费</text>
+          <text x="50" y="35" font-size="20" font-weight="bold" fill="#303133">¥45,678</text>
+        </g>
+        
+        <!-- 交易笔数 -->
+        <rect width="200" height="80" rx="8" fill="#F7F8FC" transform="translate(440 0)"/>
+        <g transform="translate(460 20)">
+          <circle cx="20" cy="20" r="20" fill="#F0F9FF"/>
+          <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 13h-3v3h-2v-3H7v-2h3V8h2v3h3v2z" fill="#409EFF" transform="translate(4 4) scale(0.7)"/>
+          <text x="50" y="15" font-size="12" fill="#909399">交易笔数</text>
+          <text x="50" y="35" font-size="20" font-weight="bold" fill="#303133">1,234</text>
+        </g>
+        
+        <!-- 平均金额 -->
+        <rect width="200" height="80" rx="8" fill="#F7F8FC" transform="translate(660 0)"/>
+        <g transform="translate(680 20)">
+          <circle cx="20" cy="20" r="20" fill="#F6FFED"/>
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#52C41A" transform="translate(4 4) scale(0.7)"/>
+          <text x="50" y="15" font-size="12" fill="#909399">平均金额</text>
+          <text x="50" y="35" font-size="20" font-weight="bold" fill="#303133">¥37</text>
+        </g>
+      </g>
+
+      <!-- 筛选条件 -->
+      <g transform="translate(30 180)">
+        <!-- 日期选择 -->
+        <rect width="150" height="36" rx="8" fill="#F7F8FC"/>
+        <text x="15" y="24" font-size="14" fill="#606266">2025-11-01</text>
+        <text x="65" y="24" font-size="14" fill="#909399">至</text>
+        <text x="80" y="24" font-size="14" fill="#606266">2025-11-14</text>
+        <path d="M7 10l5 5 5-5z" fill="#909399" transform="translate(135 10) scale(0.8)"/>
+        
+        <!-- 学生选择 -->
+        <rect width="120" height="36" rx="8" fill="#F7F8FC" transform="translate(170 0)"/>
+        <text x="15" y="24" font-size="14" fill="#606266">全部学生</text>
+        <path d="M7 10l5 5 5-5z" fill="#909399" transform="translate(105 10) scale(0.8)"/>
+        
+        <!-- 商户选择 -->
+        <rect width="120" height="36" rx="8" fill="#F7F8FC" transform="translate(310 0)"/>
+        <text x="15" y="24" font-size="14" fill="#606266">全部商户</text>
+        <path d="M7 10l5 5 5-5z" fill="#909399" transform="translate(105 10) scale(0.8)"/>
+        
+        <!-- 金额范围 -->
+        <rect width="120" height="36" rx="8" fill="#F7F8FC" transform="translate(450 0)"/>
+        <text x="15" y="24" font-size="14" fill="#606266">全部金额</text>
+        <path d="M7 10l5 5 5-5z" fill="#909399" transform="translate(105 10) scale(0.8)"/>
+        
+        <!-- 搜索按钮 -->
+        <rect width="80" height="36" rx="8" fill="#2DCDA3" transform="translate(590 0)"/>
+        <text x="40" y="24" font-size="14" fill="#FFFFFF" text-anchor="middle">搜索</text>
+        
+        <!-- 重置按钮 -->
+        <rect width="80" height="36" rx="8" fill="#F7F8FC" stroke="#DCDFE6" stroke-width="1" transform="translate(685 0)"/>
+        <text x="40" y="24" font-size="14" fill="#606266" text-anchor="middle">重置</text>
+        
+        <!-- 导出按钮 -->
+        <rect width="80" height="36" rx="8" fill="#F7F8FC" stroke="#DCDFE6" stroke-width="1" transform="translate(780 0)"/>
+        <text x="25" y="24" font-size="14" fill="#606266">导出</text>
+        <path d="M19 9h-4V3H9v6H5l7 7.5L19 9h-4zM5 18v2h14v-2H5z" fill="#909399" transform="translate(50 8) scale(0.7)"/>
+      </g>
+
+      <!-- 表格 -->
+      <g transform="translate(30 240)" font-size="14">
+        <!-- 表头 -->
+        <g fill="#909399" font-weight="500">
+          <text x="20" y="20">交易时间</text>
+          <text x="140" y="20">学生姓名</text>
+          <text x="240" y="20">卡号</text>
+          <text x="360" y="20">商户名称</text>
+          <text x="500" y="20">交易金额</text>
+          <text x="620" y="20">交易前余额</text>
+          <text x="740" y="20">交易后余额</text>
+          <text x="840" y="20">状态</text>
+        </g>
+        <line x1="0" y1="40" x2="870" y2="40" stroke="#EBEEF5" stroke-width="1"/>
+
+        <!-- 表格行 1 -->
+        <g transform="translate(0 55)" fill="#606266">
+          <text x="20" y="20">2025-11-14 12:30:15</text>
+          <text x="140" y="20">张小明</text>
+          <text x="240" y="20">2025****1234</text>
+          <text x="360" y="20">第一食堂</text>
+          <text x="500" y="20" font-weight="bold">¥15.50</text>
+          <text x="620" y="20">¥125.00</text>
+          <text x="740" y="20">¥109.50</text>
+          <g transform="translate(840 12)">
+            <circle cx="6" cy="6" r="4" fill="#67C23A"/>
+            <text x="16" y="9" fill="#67C23A">成功</text>
+          </g>
+        </g>
+        <line x1="0" y1="95" x2="870" y2="95" stroke="#EBEEF5" stroke-width="1"/>
+
+        <!-- 表格行 2 -->
+        <g transform="translate(0 110)" fill="#606266">
+          <text x="20" y="20">2025-11-14 12:15:32</text>
+          <text x="140" y="20">李小红</text>
+          <text x="240" y="20">2025****5678</text>
+          <text x="360" y="20">校园超市</text>
+          <text x="500" y="20" font-weight="bold">¥8.00</text>
+          <text x="620" y="20">¥89.50</text>
+          <text x="740" y="20">¥81.50</text>
+          <g transform="translate(840 12)">
+            <circle cx="6" cy="6" r="4" fill="#67C23A"/>
+            <text x="16" y="9" fill="#67C23A">成功</text>
+          </g>
+        </g>
+        <line x1="0" y1="150" x2="870" y2="150" stroke="#EBEEF5" stroke-width="1"/>
+
+        <!-- 表格行 3 -->
+        <g transform="translate(0 165)" fill="#606266">
+          <text x="20" y="20">2025-11-14 11:45:18</text>
+          <text x="140" y="20">王小华</text>
+          <text x="240" y="20">2025****9012</text>
+          <text x="360" y="20">第二食堂</text>
+          <text x="500" y="20" font-weight="bold">¥12.80</text>
+          <text x="620" y="20">¥156.30</text>
+          <text x="740" y="20">¥143.50</text>
+          <g transform="translate(840 12)">
+            <circle cx="6" cy="6" r="4" fill="#67C23A"/>
+            <text x="16" y="9" fill="#67C23A">成功</text>
+          </g>
+        </g>
+        <line x1="0" y1="205" x2="870" y2="205" stroke="#EBEEF5" stroke-width="1"/>
+
+        <!-- 表格行 4 -->
+        <g transform="translate(0 220)" fill="#606266">
+          <text x="20" y="20">2025-11-14 11:20:45</text>
+          <text x="140" y="20">赵小强</text>
+          <text x="240" y="20">2025****3456</text>
+          <text x="360" y="20">文具店</text>
+          <text x="500" y="20" font-weight="bold">¥25.00</text>
+          <text x="620" y="20">¥78.50</text>
+          <text x="740" y="20">¥53.50</text>
+          <g transform="translate(840 12)">
+            <circle cx="6" cy="6" r="4" fill="#67C23A"/>
+            <text x="16" y="9" fill="#67C23A">成功</text>
+          </g>
+        </g>
+        <line x1="0" y1="260" x2="870" y2="260" stroke="#EBEEF5" stroke-width="1"/>
+
+        <!-- 表格行 5 -->
+        <g transform="translate(0 275)" fill="#606266">
+          <text x="20" y="20">2025-11-14 10:55:12</text>
+          <text x="140" y="20">孙小丽</text>
+          <text x="240" y="20">2025****7890</text>
+          <text x="360" y="20">咖啡屋</text>
+          <text x="500" y="20" font-weight="bold">¥18.00</text>
+          <text x="620" y="20">¥95.00</text>
+          <text x="740" y="20">¥77.00</text>
+          <g transform="translate(840 12)">
+            <circle cx="6" cy="6" r="4" fill="#F56C6C"/>
+            <text x="16" y="9" fill="#F56C6C">退款</text>
+          </g>
+        </g>
+        <line x1="0" y1="315" x2="870" y2="315" stroke="#EBEEF5" stroke-width="1"/>
+
+        <!-- 表格行 6 -->
+        <g transform="translate(0 330)" fill="#606266">
+          <text x="20" y="20">2025-11-14 10:30:28</text>
+          <text x="140" y="20">周小杰</text>
+          <text x="240" y="20">2025****2345</text>
+          <text x="360" y="20">面包房</text>
+          <text x="500" y="20" font-weight="bold">¥6.50</text>
+          <text x="620" y="20">¥112.80</text>
+          <text x="740" y="20">¥106.30</text>
+          <g transform="translate(840 12)">
+            <circle cx="6" cy="6" r="4" fill="#67C23A"/>
+            <text x="16" y="9" fill="#67C23A">成功</text>
+          </g>
+        </g>
+        <line x1="0" y1="370" x2="870" y2="370" stroke="#EBEEF5" stroke-width="1"/>
+      </g>
+
+      <!-- 分页 -->
+      <g transform="translate(580 550)" font-size="13" fill="#606266">
+        <rect x="0" y="0" width="32" height="32" rx="4" fill="#F7F8FC"/>
+        <text x="12" y="21">&lt;</text>
+        <rect x="40" y="0" width="32" height="32" rx="4" fill="#E9FAF5"/>
+        <text x="52" y="21" fill="#2DCDA3" font-weight="bold">1</text>
+        <text x="92" y="21">2</text>
+        <text x="132" y="21">3</text>
+        <text x="172" y="21">...</text>
+        <text x="212" y="21">15</text>
+        <rect x="260" y="0" width="32" height="32" rx="4" fill="#F7F8FC"/>
+        <text x="272" y="21">&gt;</text>
+      </g>
+    </g>
+  </g>
+</svg>

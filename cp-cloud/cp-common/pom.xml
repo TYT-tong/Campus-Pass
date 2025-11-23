@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cp</groupId>
+        <artifactId>cp-cloud</artifactId>
+        <version>3.6.6</version>
+    </parent>
+
+    <artifactId>cp-common</artifactId>
+    <packaging>pom</packaging>
+    <description>
+        cp-common通用模块
+    </description>
+
+    <modules>
+        <module>cp-common-log</module>
+        <module>cp-common-core</module>
+        <module>cp-common-redis</module>
+        <module>cp-common-seata</module>
+        <module>cp-common-swagger</module>
+        <module>cp-common-sensitive</module>
+        <module>cp-common-datascope</module>
+        <module>cp-common-datasource</module>
+        <module>cp-common-security</module>
+    </modules>
+</project>

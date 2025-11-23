@@ -1,0 +1,250 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <!-- 定义阴影效果 -->
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="avatarClip">
+      <circle cx="1148" cy="35" r="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- 全局背景 -->
+  <rect width="1200" height="750" fill="#F7F8FC"/>
+
+  <!-- 侧边栏 -->
+  <rect width="220" height="750" fill="#FFFFFF" filter="url(#shadow)"/>
+  
+  <!-- Logo -->
+  <g transform="translate(25 20)">
+    <circle cx="15" cy="15" r="15" fill="#2DCDA3"/>
+    <path d="M12 10 L18 10 L15 15 Z" fill="#FFFFFF"/>
+    <path d="M10 16 L20 16 L15 22 Z" fill="#FFFFFF" opacity="0.7"/>
+    <text x="40" y="21" font-size="18" font-weight="bold" fill="#303133">校园通后台</text>
+  </g>
+
+  <!-- 菜单 -->
+  <g font-size="15" fill="#303133" transform="translate(0 80)">
+    <!-- 主页 -->
+    <g transform="translate(20 0)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M20 16 h-4 a2 2 0 0 0 -2 2 v12 a2 2 0 0 0 2 2 h4z M22 16 h4 a2 2 0 0 1 2 2 v12 a2 2 0 0 1 -2 2 h-4z" fill="#909399" transform="translate(-15 1) scale(0.7)"/>
+      <text x="40" y="29">主页 / Dashboard</text>
+    </g>
+    <!-- 用户管理 -->
+    <g transform="translate(20 58)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M25 14 c2.76 0 5 2.24 5 5 s-2.24 5 -5 5 s-5 -2.24 -5 -5 s2.24 -5 5 -5z M25 26 c-5.33 0 -16 2.67 -16 8 v4 h32 v-4 c0 -5.33 -10.67 -8 -16 -8z" fill="#909399" transform="translate(-15 -2) scale(0.7)"/>
+      <text x="40" y="29">用户管理</text>
+    </g>
+    <!-- 角色管理 (Active) -->
+    <g transform="translate(20 116)">
+      <rect width="180" height="48" rx="8" fill="#E9FAF5"/>
+      <rect width="4" height="48" rx="2" fill="#2DCDA3"/>
+      <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="#2DCDA3" transform="translate(0 10) scale(0.8)"/>
+      <text x="40" y="29" fill="#2DCDA3" font-weight="600">角色管理</text>
+    </g>
+    <!-- 消费记录 -->
+    <g transform="translate(20 174)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" fill="#909399" transform="translate(-2 12) scale(0.9)"/>
+      <text x="40" y="29">消费记录查询</text>
+    </g>
+    <!-- 通知公告 -->
+    <g transform="translate(20 232)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="#909399" transform="translate(-2 12) scale(0.9)"/>
+      <text x="40" y="29">通知公告</text>
+    </g>
+  </g>
+
+  <!-- 主内容区 -->
+  <g transform="translate(220 0)">
+    <!-- 顶部栏 -->
+    <rect width="980" height="70" fill="#FFFFFF"/>
+    
+    <!-- 面包屑 -->
+    <text x="40" y="42" font-size="14" fill="#909399">
+      <tspan fill="#303133" font-weight="600">校园通</tspan> / <tspan>系统管理</tspan> / <tspan fill="#303133" font-weight="600">角色管理</tspan>
+    </text>
+
+    <!-- 右侧图标 -->
+    <g transform="translate(800 0)">
+        <!-- 通知 -->
+        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="#909399" transform="translate(250 18) scale(0.8)"/>
+        <circle cx="273" cy="23" r="4" fill="#F56C6C"/>
+        <!-- 用户头像 -->
+        <image href="https://i.pravatar.cc/32" width="32" height="32" clip-path="url(#avatarClip)"/>
+        <text x="1095" y="42" font-size="14" fill="#303133">小宇宙</text>
+    </g>
+    
+    <!-- 内容面板 -->
+    <g transform="translate(40 100)">
+      <rect width="900" height="610" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+      
+      <!-- 标题和操作 -->
+      <text x="30" y="50" font-size="20" font-weight="bold" fill="#303133">角色列表</text>
+      <rect x="750" y="30" width="120" height="40" rx="8" fill="#2DCDA3"/>
+      <text x="778" y="55" font-size="14" fill="#FFFFFF" font-weight="500">+ 新增角色</text>
+
+      <!-- 搜索 -->
+      <g transform="translate(30 80)">
+        <rect width="250" height="36" rx="8" fill="#F7F8FC"/>
+        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#909399" transform="translate(10 5) scale(0.7)"/>
+        <text x="35" y="24" font-size="14" fill="#C0C4CC">按角色名称搜索...</text>
+      </g>
+
+      <!-- 权限筛选 -->
+      <g transform="translate(300 80)">
+        <rect width="150" height="36" rx="8" fill="#F7F8FC"/>
+        <text x="15" y="24" font-size="14" fill="#606266">全部权限</text>
+        <path d="M7 10l5 5 5-5z" fill="#909399" transform="translate(125 10) scale(0.8)"/>
+      </g>
+
+      <!-- 角色卡片列表 -->
+      <g transform="translate(30 140)">
+        <!-- 管理员角色卡片 -->
+        <g>
+          <rect width="420" height="160" rx="12" fill="#FFFFFF" stroke="#EBEEF5" stroke-width="1"/>
+          <g transform="translate(20 20)">
+            <circle cx="20" cy="20" r="20" fill="#E9FAF5"/>
+            <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="#2DCDA3" transform="translate(4 4) scale(0.8)"/>
+            <text x="50" y="25" font-size="16" font-weight="bold" fill="#303133">超级管理员</text>
+            <text x="50" y="45" font-size="12" fill="#909399">拥有系统所有权限</text>
+            
+            <!-- 权限标签 -->
+            <g transform="translate(0 60)" font-size="12">
+              <rect width="60" height="24" rx="12" fill="#F7F8FC"/>
+              <text x="30" y="17" fill="#606266" text-anchor="middle">用户管理</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(70 0)"/>
+              <text x="100" y="17" fill="#606266" text-anchor="middle">角色管理</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(140 0)"/>
+              <text x="170" y="17" fill="#606266" text-anchor="middle">系统设置</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(210 0)"/>
+              <text x="240" y="17" fill="#606266" text-anchor="middle">数据报表</text>
+            </g>
+            
+            <!-- 操作按钮 -->
+            <g transform="translate(280 0)">
+              <rect width="60" height="32" rx="8" fill="#F7F8FC"/>
+              <text x="30" y="21" font-size="12" fill="#2DCDA3" text-anchor="middle">编辑</text>
+              
+              <rect width="60" height="32" rx="8" fill="#F7F8FC" transform="translate(70 0)"/>
+              <text x="100" y="21" font-size="12" fill="#F56C6C" text-anchor="middle">删除</text>
+            </g>
+          </g>
+        </g>
+
+        <!-- 学生角色卡片 -->
+        <g transform="translate(450 0)">
+          <rect width="420" height="160" rx="12" fill="#FFFFFF" stroke="#EBEEF5" stroke-width="1"/>
+          <g transform="translate(20 20)">
+            <circle cx="20" cy="20" r="20" fill="#F0F9FF"/>
+            <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="#409EFF" transform="translate(4 4) scale(0.8)"/>
+            <text x="50" y="25" font-size="16" font-weight="bold" fill="#303133">学生</text>
+            <text x="50" y="45" font-size="12" fill="#909399">学生用户权限</text>
+            
+            <!-- 权限标签 -->
+            <g transform="translate(0 60)" font-size="12">
+              <rect width="60" height="24" rx="12" fill="#F7F8FC"/>
+              <text x="30" y="17" fill="#606266" text-anchor="middle">消费查询</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(70 0)"/>
+              <text x="100" y="17" fill="#606266" text-anchor="middle">余额查询</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(140 0)"/>
+              <text x="170" y="17" fill="#606266" text-anchor="middle">个人信息</text>
+            </g>
+            
+            <!-- 操作按钮 -->
+            <g transform="translate(280 0)">
+              <rect width="60" height="32" rx="8" fill="#F7F8FC"/>
+              <text x="30" y="21" font-size="12" fill="#2DCDA3" text-anchor="middle">编辑</text>
+              
+              <rect width="60" height="32" rx="8" fill="#F7F8FC" transform="translate(70 0)"/>
+              <text x="100" y="21" font-size="12" fill="#F56C6C" text-anchor="middle">删除</text>
+            </g>
+          </g>
+        </g>
+
+        <!-- 家长角色卡片 -->
+        <g transform="translate(0 180)">
+          <rect width="420" height="160" rx="12" fill="#FFFFFF" stroke="#EBEEF5" stroke-width="1"/>
+          <g transform="translate(20 20)">
+            <circle cx="20" cy="20" r="20" fill="#FFF4E6"/>
+            <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="#E6A23C" transform="translate(4 4) scale(0.8)"/>
+            <text x="50" y="25" font-size="16" font-weight="bold" fill="#303133">家长</text>
+            <text x="50" y="45" font-size="12" fill="#909399">家长用户权限</text>
+            
+            <!-- 权限标签 -->
+            <g transform="translate(0 60)" font-size="12">
+              <rect width="60" height="24" rx="12" fill="#F7F8FC"/>
+              <text x="30" y="17" fill="#606266" text-anchor="middle">充值缴费</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(70 0)"/>
+              <text x="100" y="17" fill="#606266" text-anchor="middle">消费记录</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(140 0)"/>
+              <text x="170" y="17" fill="#606266" text-anchor="middle">学生管理</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(210 0)"/>
+              <text x="240" y="17" fill="#606266" text-anchor="middle">通知接收</text>
+            </g>
+            
+            <!-- 操作按钮 -->
+            <g transform="translate(280 0)">
+              <rect width="60" height="32" rx="8" fill="#F7F8FC"/>
+              <text x="30" y="21" font-size="12" fill="#2DCDA3" text-anchor="middle">编辑</text>
+              
+              <rect width="60" height="32" rx="8" fill="#F7F8FC" transform="translate(70 0)"/>
+              <text x="100" y="21" font-size="12" fill="#F56C6C" text-anchor="middle">删除</text>
+            </g>
+          </g>
+        </g>
+
+        <!-- 商户角色卡片 -->
+        <g transform="translate(450 180)">
+          <rect width="420" height="160" rx="12" fill="#FFFFFF" stroke="#EBEEF5" stroke-width="1"/>
+          <g transform="translate(20 20)">
+            <circle cx="20" cy="20" r="20" fill="#F6FFED"/>
+            <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="#52C41A" transform="translate(4 4) scale(0.8)"/>
+            <text x="50" y="25" font-size="16" font-weight="bold" fill="#303133">商户</text>
+            <text x="50" y="45" font-size="12" fill="#909399">商户用户权限</text>
+            
+            <!-- 权限标签 -->
+            <g transform="translate(0 60)" font-size="12">
+              <rect width="60" height="24" rx="12" fill="#F7F8FC"/>
+              <text x="30" y="17" fill="#606266" text-anchor="middle">交易查询</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(70 0)"/>
+              <text x="100" y="17" fill="#606266" text-anchor="middle">结算管理</text>
+              
+              <rect width="60" height="24" rx="12" fill="#F7F8FC" transform="translate(140 0)"/>
+              <text x="170" y="17" fill="#606266" text-anchor="middle">商品管理</text>
+            </g>
+            
+            <!-- 操作按钮 -->
+            <g transform="translate(280 0)">
+              <rect width="60" height="32" rx="8" fill="#F7F8FC"/>
+              <text x="30" y="21" font-size="12" fill="#2DCDA3" text-anchor="middle">编辑</text>
+              
+              <rect width="60" height="32" rx="8" fill="#F7F8FC" transform="translate(70 0)"/>
+              <text x="100" y="21" font-size="12" fill="#F56C6C" text-anchor="middle">删除</text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

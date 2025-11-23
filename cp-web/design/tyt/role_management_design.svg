@@ -1,0 +1,148 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC0CB;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影效果 -->
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.1"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 主背景 -->
+  <rect width="1440" height="900" fill="url(#bgGradient)"/>
+  
+  <!-- 顶部导航栏 -->
+  <rect x="0" y="0" width="1440" height="70" fill="white" opacity="0.95"/>
+  
+  <!-- Logo区域 -->
+  <circle cx="60" cy="35" r="20" fill="#409EFF"/>
+  <text x="90" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#333">校园通后台管理系统</text>
+  
+  <!-- 用户头像和菜单 -->
+  <circle cx="1300" cy="35" r="25" fill="#E6F2FF" stroke="#409EFF" stroke-width="2"/>
+  <text x="1340" y="40" font-family="Arial, sans-serif" font-size="14" fill="#666">管理员</text>
+  
+  <!-- 侧边栏 -->
+  <rect x="0" y="70" width="240" height="830" fill="white" opacity="0.95" filter="url(#softShadow)"/>
+  
+  <!-- 侧边栏菜单项 -->
+  <rect x="20" y="120" width="200" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="70" y="150" font-family="Arial, sans-serif" font-size="16" fill="#333">🏠 首页</text>
+  
+  <rect x="20" y="190" width="200" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="70" y="220" font-family="Arial, sans-serif" font-size="16" fill="#333">👥 用户管理</text>
+  
+  <rect x="20" y="260" width="200" height="50" fill="#409EFF" rx="8"/>
+  <text x="70" y="290" font-family="Arial, sans-serif" font-size="16" font-weight="500" fill="white">🔐 角色管理</text>
+  
+  <rect x="20" y="330" width="200" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="70" y="360" font-family="Arial, sans-serif" font-size="16" fill="#333">💳 消费记录</text>
+  
+  <rect x="20" y="400" width="200" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="70" y="430" font-family="Arial, sans-serif" font-size="16" fill="#333">📢 通知公告</text>
+  
+  <!-- 面包屑导航 -->
+  <text x="270" y="110" font-family="Arial, sans-serif" font-size="14" fill="#666">首页 / 角色管理</text>
+  
+  <!-- 主内容区域 -->
+  <rect x="270" y="130" width="1150" height="750" fill="white" rx="12" filter="url(#softShadow)"/>
+  
+  <!-- 页面标题和操作区 -->
+  <text x="300" y="170" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">角色管理</text>
+  
+  <!-- 搜索和操作栏 -->
+  <rect x="300" y="190" width="350" height="40" fill="white" rx="20" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="320" y="215" font-family="Arial, sans-serif" font-size="14" fill="#999">🔍 搜索角色名称...</text>
+  
+  <rect x="670" y="190" width="80" height="40" fill="#409EFF" rx="20"/>
+  <text x="700" y="215" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="white">搜索</text>
+  
+  <rect x="770" y="190" width="100" height="40" fill="#52C41A" rx="8"/>
+  <text x="790" y="215" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="white">➕ 新增角色</text>
+  
+  <!-- 角色权限卡片 -->
+  <rect x="300" y="250" width="350" height="200" fill="white" rx="12" filter="url(#softShadow)"/>
+  <rect x="320" y="270" width="60" height="60" fill="#E6F7FF" rx="12"/>
+  <text x="340" y="305" font-family="Arial, sans-serif" font-size="24" fill="#409EFF">👨‍💼</text>
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#333">管理员</text>
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="12" fill="#666">系统最高权限</text>
+  <text x="320" y="340" font-family="Arial, sans-serif" font-size="14" fill="#333">用户管理、角色管理、系统设置</text>
+  <text x="320" y="360" font-family="Arial, sans-serif" font-size="14" fill="#333">数据统计、权限分配</text>
+  <rect x="320" y="380" width="60" height="30" fill="#409EFF" rx="6"/>
+  <text x="340" y="398" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="white">编辑</text>
+  <rect x="400" y="380" width="60" height="30" fill="#FF4D94" rx="6"/>
+  <text x="420" y="398" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="white">删除</text>
+  
+  <rect x="680" y="250" width="350" height="200" fill="white" rx="12" filter="url(#softShadow)"/>
+  <rect x="700" y="270" width="60" height="60" fill="#FFF7E6" rx="12"/>
+  <text x="720" y="305" font-family="Arial, sans-serif" font-size="24" fill="#FFA940">👩‍🏫</text>
+  <text x="780" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#333">教师</text>
+  <text x="780" y="310" font-family="Arial, sans-serif" font-size="12" fill="#666">教学相关权限</text>
+  <text x="700" y="340" font-family="Arial, sans-serif" font-size="14" fill="#333">学生管理、成绩录入</text>
+  <text x="700" y="360" font-family="Arial, sans-serif" font-size="14" fill="#333">课程安排、教学资料</text>
+  <rect x="700" y="380" width="60" height="30" fill="#409EFF" rx="6"/>
+  <text x="720" y="398" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="white">编辑</text>
+  <rect x="780" y="380" width="60" height="30" fill="#FF4D94" rx="6"/>
+  <text x="800" y="398" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="white">删除</text>
+  
+  <rect x="1060" y="250" width="350" height="200" fill="white" rx="12" filter="url(#softShadow)"/>
+  <rect x="1080" y="270" width="60" height="60" fill="#F6FFED" rx="12"/>
+  <text x="1100" y="305" font-family="Arial, sans-serif" font-size="24" fill="#52C41A">👨‍🎓</text>
+  <text x="1160" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#333">学生</text>
+  <text x="1160" y="310" font-family="Arial, sans-serif" font-size="12" fill="#666">基础用户权限</text>
+  <text x="1080" y="340" font-family="Arial, sans-serif" font-size="14" fill="#333">个人信息、课程查询</text>
+  <text x="1080" y="360" font-family="Arial, sans-serif" font-size="14" fill="#333">成绩查看、校园服务</text>
+  <rect x="1080" y="380" width="60" height="30" fill="#409EFF" rx="6"/>
+  <text x="1100" y="398" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="white">编辑</text>
+  <rect x="1160" y="380" width="60" height="30" fill="#FF4D94" rx="6"/>
+  <text x="1180" y="398" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="white">删除</text>
+  
+  <!-- 权限分配表格 -->
+  <rect x="300" y="480" width="1090" height="300" fill="white" rx="12" filter="url(#softShadow)"/>
+  <text x="320" y="510" font-family="Arial, sans-serif" font-size="18" font-weight="500" fill="#333">权限分配详情</text>
+  
+  <!-- 权限表格头部 -->
+  <rect x="320" y="530" width="1050" height="40" fill="#F5F5F5" rx="8"/>
+  <text x="340" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">权限名称</text>
+  <text x="600" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">权限描述</text>
+  <text x="900" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">适用角色</text>
+  <text x="1200" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">操作</text>
+  
+  <!-- 权限列表 -->
+  <rect x="320" y="590" width="1050" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="340" y="615" font-family="Arial, sans-serif" font-size="14" fill="#333">用户管理权限</text>
+  <text x="600" y="615" font-family="Arial, sans-serif" font-size="14" fill="#666">管理用户信息、状态、权限</text>
+  <text x="900" y="615" font-family="Arial, sans-serif" font-size="14" fill="#333">管理员</text>
+  <circle cx="1215" cy="610" r="8" fill="#52C41A"/>
+  <text x="1230" y="615" font-family="Arial, sans-serif" font-size="12" fill="#52C41A">已启用</text>
+  
+  <rect x="320" y="650" width="1050" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="340" y="675" font-family="Arial, sans-serif" font-size="14" fill="#333">角色管理权限</text>
+  <text x="600" y="675" font-family="Arial, sans-serif" font-size="14" fill="#666">创建、编辑、删除角色</text>
+  <text x="900" y="675" font-family="Arial, sans-serif" font-size="14" fill="#333">管理员</text>
+  <circle cx="1215" cy="670" r="8" fill="#52C41A"/>
+  <text x="1230" y="675" font-family="Arial, sans-serif" font-size="12" fill="#52C41A">已启用</text>
+  
+  <rect x="320" y="710" width="1050" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="340" y="735" font-family="Arial, sans-serif" font-size="14" fill="#333">数据统计权限</text>
+  <text x="600" y="735" font-family="Arial, sans-serif" font-size="14" fill="#666">查看系统数据统计报表</text>
+  <text x="900" y="735" font-family="Arial, sans-serif" font-size="14" fill="#333">管理员,教师</text>
+  <circle cx="1215" cy="730" r="8" fill="#52C41A"/>
+  <text x="1230" y="735" font-family="Arial, sans-serif" font-size="12" fill="#52C41A">已启用</text>
+  
+  <!-- 装饰性几何图形 -->
+  <circle cx="120" cy="800" r="80" fill="#FFA940" opacity="0.2"/>
+  <rect x="1000" y="50" width="60" height="60" fill="#52C41A" opacity="0.2" transform="rotate(45 1030 80)"/>
+  <polygon points="1300,750 1350,850 1250,850" fill="#FF4D94" opacity="0.2"/>
+</svg>

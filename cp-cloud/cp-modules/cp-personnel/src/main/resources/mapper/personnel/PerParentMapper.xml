@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cp.personnel.mapper.PerParentMapper">
+
+    <select id="selectParentPage" resultType="com.cp.personnel.domain.vo.PerParentVO">
+        SELECT
+        pp.parent_id AS parentId,
+        pp.parent_name AS parentName,
+        pp.age AS age,
+        pp.sex AS sex,
+        pp.phone AS phone,
+        u.user_name AS userName,
+        u.status AS status,
+        (SELECT ps.student_name
+        FROM per_ps_relation spr
+        INNER JOIN per_student ps ON ps.student_id = spr.student_id
+        WHERE spr.parent_id = pp.parent_id
+        ORDER BY spr.create_time
+        LIMIT 1) AS studentName
+        FROM per_parent pp
+        LEFT JOIN sys_user u ON u.user_id = pp.parent_id
+        WHERE 1 = 1  <!-- 无分号 -->
+        <if test="dto.phone != null and dto.phone != ''">
+            AND pp.phone = #{dto.phone}
+        </if>
+        <if test="dto.parentName != null and dto.parentName != ''">
+            AND pp.parent_name LIKE CONCAT('%', #{dto.parentName}, '%')
+        </if>
+        <if test="dto.status != null">
+            AND u.status = #{dto.status}
+        </if>
+    </select>
+</mapper>

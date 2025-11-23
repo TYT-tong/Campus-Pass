@@ -1,0 +1,169 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1200" height="750" fill="#f8f9fa"/>
+  
+  <!-- 顶部导航栏 -->
+  <rect width="1200" height="60" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="30" cy="30" r="15" fill="#2F8CFB"/>
+  <text x="55" y="35" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">校园通后台管理系统</text>
+  <rect x="1050" y="15" width="80" height="30" rx="15" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="1090" y="33" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">管理员</text>
+  
+  <!-- 侧边栏 -->
+  <rect width="200" height="690" y="60" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="20" y="90" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">🏠 主页</text>
+  <text x="20" y="140" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">👥 用户管理</text>
+  <text x="20" y="190" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">🔧 角色管理</text>
+  <rect x="0" y="200" width="200" height="50" fill="#2F8CFB" opacity="0.1"/>
+  <text x="20" y="230" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB" font-weight="500">📊 消费记录</text>
+  <text x="20" y="280" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📢 通知公告</text>
+  
+  <!-- 主内容区 -->
+  <rect x="220" y="80" width="960" height="650" fill="#ffffff" rx="4" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 面包屑导航 -->
+  <text x="240" y="105" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">主页 &gt; 消费记录</text>
+  
+  <!-- 页面标题 -->
+  <text x="240" y="130" font-family="PingFang SC, Microsoft YaHei" font-size="18" fill="#222" font-weight="500">消费记录查询</text>
+  
+  <!-- 搜索和筛选区域 -->
+  <rect x="240" y="150" width="920" height="120" fill="#f5f7fa" rx="4"/>
+  
+  <!-- 第一行筛选 -->
+  <text x="260" y="175" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">时间范围：</text>
+  <rect x="340" y="160" width="150" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="415" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" text-anchor="middle">2024-01-01</text>
+  <text x="500" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">至</text>
+  <rect x="520" y="160" width="150" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="595" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" text-anchor="middle">2024-12-31</text>
+  
+  <text x="700" y="175" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">学生：</text>
+  <rect x="750" y="160" width="180" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="840" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#999" text-anchor="middle">请选择学生</text>
+  
+  <!-- 第二行筛选 -->
+  <text x="260" y="215" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">商户：</text>
+  <rect x="320" y="200" width="150" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="395" y="220" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#999" text-anchor="middle">请选择商户</text>
+  
+  <text x="500" y="215" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">交易状态：</text>
+  <rect x="580" y="200" width="100" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="630" y="220" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" text-anchor="middle">全部</text>
+  
+  <text x="710" y="215" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">金额范围：</text>
+  <rect x="800" y="200" width="100" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="850" y="220" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#999" text-anchor="middle">最低金额</text>
+  <text x="910" y="220" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">至</text>
+  <rect x="930" y="200" width="100" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="980" y="220" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#999" text-anchor="middle">最高金额</text>
+  
+  <!-- 第三行筛选 -->
+  <text x="260" y="255" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">交易类型：</text>
+  <rect x="340" y="240" width="120" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="400" y="260" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" text-anchor="middle">全部类型</text>
+  
+  <text x="500" y="255" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">支付方式：</text>
+  <rect x="580" y="240" width="120" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="640" y="260" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" text-anchor="middle">全部方式</text>
+  
+  <!-- 搜索和重置按钮 -->
+  <rect x="850" y="240" width="80" height="32" rx="4" fill="#2F8CFB"/>
+  <text x="890" y="260" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#ffffff" text-anchor="middle">搜索</text>
+  
+  <rect x="950" y="240" width="80" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="990" y="260" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666" text-anchor="middle">重置</text>
+  
+  <!-- 统计信息 -->
+  <rect x="240" y="280" width="920" height="60" fill="#ffffff"/>
+  <rect x="240" y="290" width="180" height="40" rx="4" fill="#f0f9ff" stroke="#b3d8ff" stroke-width="1"/>
+  <text x="330" y="305" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">总交易笔数</text>
+  <text x="330" y="325" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#2F8CFB" font-weight="500" text-anchor="middle">15,678</text>
+  
+  <rect x="440" y="290" width="180" height="40" rx="4" fill="#f0f9ff" stroke="#b3d8ff" stroke-width="1"/>
+  <text x="530" y="305" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">总交易金额</text>
+  <text x="530" y="325" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#2F8CFB" font-weight="500" text-anchor="middle">¥234,567</text>
+  
+  <rect x="640" y="290" width="180" height="40" rx="4" fill="#f0f9ff" stroke="#b3d8ff" stroke-width="1"/>
+  <text x="730" y="305" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">平均交易金额</text>
+  <text x="730" y="325" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#2F8CFB" font-weight="500" text-anchor="middle">¥14.96</text>
+  
+  <rect x="840" y="290" width="180" height="40" rx="4" fill="#f0f9ff" stroke="#b3d8ff" stroke-width="1"/>
+  <text x="930" y="305" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">退款笔数</text>
+  <text x="930" y="325" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#2F8CFB" font-weight="500" text-anchor="middle">234</text>
+  
+  <!-- 操作按钮 -->
+  <rect x="240" y="350" width="100" height="32" rx="4" fill="#2F8CFB"/>
+  <text x="290" y="372" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#ffffff" text-anchor="middle">导出数据</text>
+  
+  <rect x="360" y="350" width="100" height="32" rx="4" fill="#67c23a"/>
+  <text x="410" y="372" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#ffffff" text-anchor="middle">打印报表</text>
+  
+  <!-- 交易记录表格 -->
+  <rect x="240" y="400" width="920" height="280" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 表头 -->
+  <rect x="240" y="400" width="920" height="40" fill="#f5f7fa"/>
+  <text x="260" y="425" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">交易时间</text>
+  <text x="380" y="425" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">学生姓名</text>
+  <text x="500" y="425" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">商户名称</text>
+  <text x="620" y="425" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">交易金额</text>
+  <text x="720" y="425" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">余额变化</text>
+  <text x="820" y="425" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">交易状态</text>
+  <text x="920" y="425" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">操作</text>
+  
+  <!-- 表格行 -->
+  <line x1="240" y1="440" x2="1160" y2="440" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="260" y="465" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">2024-01-15 14:23:45</text>
+  <text x="380" y="465" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">张三</text>
+  <text x="500" y="465" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">食堂一楼</text>
+  <text x="620" y="465" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">¥12.50</text>
+  <text x="720" y="465" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#f56c6c">-¥12.50</text>
+  <rect x="810" y="450" width="50" height="20" rx="10" fill="#67c23a" opacity="0.1"/>
+  <text x="835" y="464" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#67c23a" text-anchor="middle">成功</text>
+  <text x="920" y="465" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">详情</text>
+  
+  <line x1="240" y1="480" x2="1160" y2="480" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="260" y="505" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">2024-01-15 13:15:32</text>
+  <text x="380" y="505" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">李四</text>
+  <text x="500" y="505" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">超市便利店</text>
+  <text x="620" y="505" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">¥8.00</text>
+  <text x="720" y="505" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#f56c6c">-¥8.00</text>
+  <rect x="810" y="490" width="50" height="20" rx="10" fill="#67c23a" opacity="0.1"/>
+  <text x="835" y="504" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#67c23a" text-anchor="middle">成功</text>
+  <text x="920" y="505" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">详情</text>
+  
+  <line x1="240" y1="520" x2="1160" y2="520" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="260" y="545" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">2024-01-15 12:45:18</text>
+  <text x="380" y="545" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">王五</text>
+  <text x="500" y="545" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">图书馆咖啡厅</text>
+  <text x="620" y="545" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">¥15.00</text>
+  <text x="720" y="545" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#f56c6c">-¥15.00</text>
+  <rect x="810" y="530" width="50" height="20" rx="10" fill="#e6a23c" opacity="0.1"/>
+  <text x="835" y="544" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#e6a23c" text-anchor="middle">处理中</text>
+  <text x="920" y="545" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">详情</text>
+  
+  <line x1="240" y1="560" x2="1160" y2="560" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="260" y="585" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">2024-01-15 11:30:25</text>
+  <text x="380" y="585" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">赵六</text>
+  <text x="500" y="585" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">食堂二楼</text>
+  <text x="620" y="585" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">¥18.80</text>
+  <text x="720" y="585" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#67c23a">+¥18.80</text>
+  <rect x="810" y="570" width="50" height="20" rx="10" fill="#f56c6c" opacity="0.1"/>
+  <text x="835" y="584" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#f56c6c" text-anchor="middle">已退款</text>
+  <text x="920" y="585" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">详情</text>
+  
+  <line x1="240" y1="600" x2="1160" y2="600" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="260" y="625" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">2024-01-15 10:20:15</text>
+  <text x="380" y="625" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">孙七</text>
+  <text x="500" y="625" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">校园文具店</text>
+  <text x="620" y="625" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222">¥25.50</text>
+  <text x="720" y="625" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#f56c6c">-¥25.50</text>
+  <rect x="810" y="610" width="50" height="20" rx="10" fill="#67c23a" opacity="0.1"/>
+  <text x="835" y="624" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#67c23a" text-anchor="middle">成功</text>
+  <text x="920" y="625" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">详情</text>
+  
+  <!-- 分页 -->
+  <rect x="240" y="680" width="920" height="40" fill="#ffffff"/>
+  <text x="600" y="700" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666" text-anchor="middle">共 23,456 条记录，每页显示 20 条</text>
+</svg>

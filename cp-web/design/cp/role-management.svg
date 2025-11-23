@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+<linearGradient id="bgPinkRM" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#FFFFFF"/>
+<stop offset="55%" stop-color="#FFFFFF"/>
+<stop offset="100%" stop-color="#FDE3E8"/>
+</linearGradient>
+<linearGradient id="primaryRM" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#5EA1FF"/>
+<stop offset="100%" stop-color="#4C8DFF"/>
+</linearGradient>
+<filter id="shadowRM" x="-50%" y="-50%" width="200%" height="200%">
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="8"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="SourceGraphic"/>
+</filter>
+</defs>
+
+<rect x="0" y="0" width="1440" height="900" fill="url(#bgPinkRM)"/>
+<rect x="0" y="0" width="1440" height="64" fill="#FFFFFF"/>
+<text x="72" y="40" fill="#333333" font-size="18" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">校园通后台管理系统</text>
+<circle cx="40" cy="32" r="14" fill="#34C79A"/>
+
+<rect x="0" y="64" width="240" height="836" fill="#FFFFFF"/>
+<rect x="239" y="64" width="1" height="836" fill="#E6E6EB"/>
+<rect x="24" y="126" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="152" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">概览</text>
+<rect x="24" y="174" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="200" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">用户管理</text>
+<rect x="24" y="222" width="192" height="40" rx="10" fill="url(#primaryRM)"/>
+<text x="44" y="248" fill="#FFFFFF" font-size="14" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">角色管理</text>
+<rect x="24" y="270" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="296" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">消费查询</text>
+<rect x="24" y="318" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="344" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">通知公告</text>
+
+<text x="260" y="100" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">首页</text>
+<text x="304" y="100" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">›</text>
+<text x="320" y="100" fill="#333333" font-size="12" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">角色管理</text>
+
+<text x="260" y="144" fill="#333333" font-size="22" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">角色管理</text>
+
+<rect x="260" y="170" width="1080" height="120" rx="12" fill="#FFFFFF" filter="url(#shadowRM)"/>
+<text x="280" y="206" fill="#777777" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">角色列表</text>
+<rect x="280" y="224" width="220" height="40" rx="8" fill="#F5F7FB"/>
+<text x="292" y="251" fill="#777777" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">搜索角色名称</text>
+<rect x="516" y="224" width="120" height="40" rx="8" fill="url(#primaryRM)"/>
+<text x="556" y="251" fill="#FFFFFF" font-size="14" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">新增角色</text>
+
+<rect x="260" y="310" width="520" height="480" rx="12" fill="#FFFFFF" filter="url(#shadowRM)"/>
+<text x="280" y="340" fill="#333333" font-size="16" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">角色卡片</text>
+<rect x="280" y="360" width="220" height="120" rx="12" fill="#F5F7FB"/>
+<text x="300" y="410" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">学生</text>
+<rect x="280" y="490" width="220" height="120" rx="12" fill="#F5F7FB"/>
+<text x="300" y="540" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">教师</text>
+<rect x="520" y="360" width="220" height="120" rx="12" fill="#F5F7FB"/>
+<text x="540" y="410" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">管理员</text>
+<rect x="520" y="490" width="220" height="120" rx="12" fill="#F5F7FB"/>
+<text x="540" y="540" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">财务</text>
+
+<rect x="800" y="310" width="540" height="480" rx="12" fill="#FFFFFF" filter="url(#shadowRM)"/>
+<text x="820" y="340" fill="#333333" font-size="16" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">权限明细</text>
+<rect x="820" y="364" width="500" height="40" rx="8" fill="#F9FAFB"/>
+<text x="832" y="390" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">模块</text>
+<text x="970" y="390" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">读</text>
+<text x="1030" y="390" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">写</text>
+<text x="1090" y="390" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">删</text>
+<text x="1150" y="390" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">导出</text>
+<rect x="820" y="410" width="500" height="1" fill="#E6E6EB"/>
+
+<rect x="820" y="424" width="500" height="48" rx="8" fill="#FFFFFF" stroke="#F0F0F0"/>
+<text x="832" y="454" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">用户管理</text>
+<rect x="960" y="436" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1020" y="436" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1080" y="436" width="28" height="28" rx="6" fill="#F7A5B2"/>
+<rect x="1140" y="436" width="28" height="28" rx="6" fill="#A8DADC"/>
+
+<rect x="820" y="480" width="500" height="48" rx="8" fill="#FFFFFF" stroke="#F0F0F0"/>
+<text x="832" y="510" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">角色管理</text>
+<rect x="960" y="492" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1020" y="492" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1080" y="492" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1140" y="492" width="28" height="28" rx="6" fill="#A8DADC"/>
+
+<rect x="820" y="536" width="500" height="48" rx="8" fill="#FFFFFF" stroke="#F0F0F0"/>
+<text x="832" y="566" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">消费记录</text>
+<rect x="960" y="548" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1020" y="548" width="28" height="28" rx="6" fill="#F7A5B2"/>
+<rect x="1080" y="548" width="28" height="28" rx="6" fill="#F7A5B2"/>
+<rect x="1140" y="548" width="28" height="28" rx="6" fill="#A8DADC"/>
+
+<rect x="820" y="592" width="500" height="48" rx="8" fill="#FFFFFF" stroke="#F0F0F0"/>
+<text x="832" y="622" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">通知公告</text>
+<rect x="960" y="604" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1020" y="604" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1080" y="604" width="28" height="28" rx="6" fill="#34C79A"/>
+<rect x="1140" y="604" width="28" height="28" rx="6" fill="#A8DADC"/>
+
+<circle cx="1240" cy="220" r="20" fill="#F8D882" opacity="0.5"/>
+<rect x="900" y="760" width="40" height="40" rx="10" fill="#A8DADC" opacity="0.5"/>
+</svg>

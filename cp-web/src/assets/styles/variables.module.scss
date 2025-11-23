@@ -1,0 +1,18 @@
+@use './variables.scss' as v;
+
+:export {
+  sidebarBackground: v.$base-sidebar-background;
+  menuColor: v.$base-menu-color;
+  menuLightColor: v.$base-menu-light-color;
+  menuColorActive: v.$base-menu-color-active;
+  menuBackground: v.$base-menu-background;
+  menuLightBackground: v.$base-menu-light-background;
+  subMenuBackground: v.$base-sub-menu-background;
+  subMenuHover: v.$base-sub-menu-hover;
+  sideBarWidth: v.$base-sidebar-width;
+  logoTitleColor: v.$base-logo-title-color;
+  logoLightTitleColor: v.$base-logo-light-title-color;
+  menuBg: v.$base-menu-background;
+  menuText: v.$base-menu-color;
+  menuActiveText: v.$base-menu-color-active;
+}

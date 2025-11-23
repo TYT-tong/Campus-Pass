@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小宇宙 - 让宇宙，听到你的声音</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        /* 主容器 */
+        .login-container {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* 左侧品牌区域 */
+        .brand-section {
+            flex: 1;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe0e6 100%);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+            overflow: hidden;
+        }
+
+        /* 几何装饰图形 */
+        .geometric-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            opacity: 0.3;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .shape:nth-child(1) {
+            width: 120px;
+            height: 120px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 80px;
+            height: 80px;
+            background: #4ecdc4;
+            transform: rotate(45deg);
+            top: 60%;
+            right: 20%;
+            animation-delay: 2s;
+        }
+
+        .shape:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background: #45b7d1;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            bottom: 20%;
+            left: 30%;
+            animation-delay: 4s;
+        }
+
+        .shape:nth-child(4) {
+            width: 60px;
+            height: 60px;
+            background: #f9ca24;
+            border-radius: 50%;
+            top: 30%;
+            right: 10%;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        /* 品牌内容 */
+        .brand-content {
+            position: relative;
+            z-index: 10;
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .brand-icon {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .brand-icon::before {
+            content: '🚀';
+            font-size: 16px;
+        }
+
+        .brand-title {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            color: #333;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .brand-subtitle {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            color: #333;
+            margin-bottom: 40px;
+            letter-spacing: -1px;
+        }
+
+        .brand-description {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            max-width: 400px;
+        }
+
+        /* 右侧登录区域 */
+        .login-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            background: #fff;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .login-content {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .login-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .login-subtitle {
+            font-size: 16px;
+            color: #999;
+        }
+
+        /* 表单样式 */
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .phone-input-group {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .country-code {
+            background: #f5f5f5;
+            color: #333;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .form-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #e8e8e8;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .form-input:focus {
+            border-color: #4ecdc4;
+            box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
+        }
+
+        .form-input.error {
+            border-color: #ff6b6b;
+            box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+        }
+
+        .send-code-btn {
+            background: #f5f5f5;
+            color: #666;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .send-code-btn:hover:not(:disabled) {
+            background: #e8e8e8;
+            color: #333;
+        }
+
+        .send-code-btn:disabled {
+            background: #f0f0f0;
+            color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px 24px;
+            background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 16px;
+        }
+
+        .login-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(78, 205, 196, 0.3);
+        }
+
+        .login-btn:active:not(:disabled) {
+            transform: translateY(0);
+        }
+
+        .login-btn:disabled {
+            background: #e8e8e8;
+            color: #ccc;
+            cursor: not-allowed;
+        }
+
+        /* 底部信息 */
+        .login-footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .footer-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            background: linear-gradient(135deg, #4ecdc4, #44a08d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .footer-icon::before {
+            content: '🪶';
+        }
+
+        .footer-links {
+            font-size: 12px;
+            color: #999;
+            line-height: 1.6;
+        }
+
+        .footer-links a {
+            color: #999;
+            text-decoration: none;
+            margin: 0 8px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #4ecdc4;
+        }
+
+        /* 错误提示 */
+        .error-message {
+            display: none;
+            font-size: 12px;
+            color: #ff6b6b;
+            margin-top: 4px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 加载动画 */
+        .loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 0.8s linear infinite;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+            }
+            
+            .brand-section {
+                padding: 40px 20px;
+                min-height: 300px;
+            }
+            
+            .brand-title,
+            .brand-subtitle {
+                font-size: 32px;
+            }
+            
+            .login-section {
+                padding: 40px 20px;
+            }
+            
+            .geometric-shapes {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .brand-title,
+            .brand-subtitle {
+                font-size: 24px;
+            }
+            
+            .phone-input-group {
+                flex-direction: column;
+            }
+            
+            .country-code {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .send-code-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- 左侧品牌区域 -->
+        <div class="brand-section">
+            <div class="geometric-shapes">
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+                <div class="shape"></div>
+            </div>
+            
+            <div class="brand-content">
+                <div class="brand-logo">
+                    <div class="brand-icon"></div>
+                    <span>小宇宙</span>
+                </div>
+                <h1 class="brand-title">让宇宙，</h1>
+                <h2 class="brand-subtitle">听到你的声音</h2>
+                <p class="brand-description">
+                    在这里，每一个声音都能被听见，每一个想法都能被分享。
+                    加入我们，一起探索无限可能的宇宙。
+                </p>
+            </div>
+        </div>
+
+        <!-- 右侧登录区域 -->
+        <div class="login-section">
+            <div class="login-content">
+                <div class="login-header">
+                    <h2 class="login-title">登录</h2>
+                    <p class="login-subtitle">欢迎来到小宇宙</p>
+                </div>
+
+                <form class="login-form" id="loginForm">
+                    <div class="form-group">
+                        <div class="phone-input-group">
+                            <div class="country-code">+86</div>
+                            <input 
+                                type="tel" 
+                                class="form-input" 
+                                placeholder="请输入手机号" 
+                                id="phoneNumber"
+                                maxlength="11"
+                            >
+                        </div>
+                        <div class="error-message" id="phoneError">请输入正确的手机号</div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="phone-input-group">
+                            <input 
+                                type="text" 
+                                class="form-input" 
+                                placeholder="请输入验证码" 
+                                id="verificationCode"
+                                maxlength="6"
+                            >
+                            <button type="button" class="send-code-btn" id="sendCodeBtn">
+                                发送验证码
+                            </button>
+                        </div>
+                        <div class="error-message" id="codeError">请输入验证码</div>
+                    </div>
+
+                    <button type="submit" class="login-btn" id="loginBtn">
+                        <span id="btnText">登录</span>
+                    </button>
+                </form>
+
+                <div class="login-footer">
+                    <div class="footer-logo">
+                        <div class="footer-icon"></div>
+                        <span>小宇宙</span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">服务协议</a>
+                        <span>|</span>
+                        <a href="#">隐私政策</a>
+                        <span>|</span>
+                        <span>浙ICP备1905284号-2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 表单验证和交互
+        class LoginForm {
+            constructor() {
+                this.form = document.getElementById('loginForm');
+                this.phoneInput = document.getElementById('phoneNumber');
+                this.codeInput = document.getElementById('verificationCode');
+                this.sendCodeBtn = document.getElementById('sendCodeBtn');
+                this.loginBtn = document.getElementById('loginBtn');
+                this.countdown = 0;
+                
+                this.init();
+            }
+
+            init() {
+                this.bindEvents();
+            }
+
+            bindEvents() {
+                // 手机号输入验证
+                this.phoneInput.addEventListener('input', (e) => {
+                    const value = e.target.value.replace(/\D/g, '');
+                    e.target.value = value;
+                    this.validatePhone();
+                });
+
+                // 验证码输入验证
+                this.codeInput.addEventListener('input', (e) => {
+                    const value = e.target.value.replace(/\D/g, '');
+                    e.target.value = value;
+                    this.validateCode();
+                });
+
+                // 发送验证码
+                this.sendCodeBtn.addEventListener('click', () => {
+                    this.sendVerificationCode();
+                });
+
+                // 表单提交
+                this.form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.handleLogin();
+                });
+            }
+
+            validatePhone() {
+                const phone = this.phoneInput.value;
+                const phoneError = document.getElementById('phoneError');
+                
+                if (phone.length === 11 && /^1[3-9]\d{9}$/.test(phone)) {
+                    this.phoneInput.classList.remove('error');
+                    phoneError.style.display = 'none';
+                    this.sendCodeBtn.disabled = false;
+                    return true;
+                } else {
+                    this.phoneInput.classList.add('error');
+                    phoneError.style.display = 'block';
+                    this.sendCodeBtn.disabled = true;
+                    return false;
+                }
+            }
+
+            validateCode() {
+                const code = this.codeInput.value;
+                const codeError = document.getElementById('codeError');
+                
+                if (code.length === 6) {
+                    this.codeInput.classList.remove('error');
+                    codeError.style.display = 'none';
+                    return true;
+                } else {
+                    this.codeInput.classList.add('error');
+                    codeError.style.display = 'block';
+                    return false;
+                }
+            }
+
+            sendVerificationCode() {
+                if (!this.validatePhone()) return;
+
+                // 模拟发送验证码
+                this.sendCodeBtn.disabled = true;
+                this.sendCodeBtn.innerHTML = '<span class="loading"></span>发送中...';
+
+                setTimeout(() => {
+                    this.startCountdown();
+                    // 模拟自动填充验证码
+                    setTimeout(() => {
+                        this.codeInput.value = '123456';
+                        this.validateCode();
+                    }, 1000);
+                }, 1500);
+            }
+
+            startCountdown() {
+                this.countdown = 60;
+                this.updateCountdown();
+            }
+
+            updateCountdown() {
+                if (this.countdown > 0) {
+                    this.sendCodeBtn.textContent = `${this.countdown}秒后重试`;
+                    this.sendCodeBtn.disabled = true;
+                    this.countdown--;
+                    setTimeout(() => this.updateCountdown(), 1000);
+                } else {
+                    this.sendCodeBtn.textContent = '发送验证码';
+                    this.sendCodeBtn.disabled = false;
+                }
+            }
+
+            handleLogin() {
+                const phoneValid = this.validatePhone();
+                const codeValid = this.validateCode();
+
+                if (!phoneValid || !codeValid) return;
+
+                // 模拟登录
+                this.loginBtn.disabled = true;
+                this.loginBtn.innerHTML = '<span class="loading"></span>登录中...';
+
+                setTimeout(() => {
+                    // 模拟登录成功
+                    this.showSuccess();
+                    setTimeout(() => {
+                        alert('登录成功！欢迎回到小宇宙 🚀');
+                        this.resetForm();
+                    }, 1000);
+                }, 2000);
+            }
+
+            showSuccess() {
+                this.loginBtn.innerHTML = '✓ 登录成功';
+                this.loginBtn.style.background = 'linear-gradient(135deg, #52c41a 0%, #389e0d 100%)';
+            }
+
+            resetForm() {
+                this.form.reset();
+                this.phoneInput.classList.remove('error');
+                this.codeInput.classList.remove('error');
+                document.getElementById('phoneError').style.display = 'none';
+                document.getElementById('codeError').style.display = 'none';
+                this.loginBtn.disabled = false;
+                this.loginBtn.innerHTML = '<span id="btnText">登录</span>';
+                this.loginBtn.style.background = 'linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%)';
+            }
+        }
+
+        // 初始化登录表单
+        document.addEventListener('DOMContentLoaded', () => {
+            new LoginForm();
+        });
+
+        // 添加一些交互效果
+        document.addEventListener('DOMContentLoaded', () => {
+            // 输入框焦点效果
+            const inputs = document.querySelectorAll('.form-input');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+
+            // 添加鼠标跟随效果
+            document.addEventListener('mousemove', (e) => {
+                const shapes = document.querySelectorAll('.shape');
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+                
+                shapes.forEach((shape, index) => {
+                    const speed = (index + 1) * 0.5;
+                    const x = (mouseX - 0.5) * speed * 20;
+                    const y = (mouseY - 0.5) * speed * 20;
+                    shape.style.transform += ` translate(${x}px, ${y}px)`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

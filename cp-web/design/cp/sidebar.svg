@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="900" viewBox="0 0 320 900">
+<defs>
+<linearGradient id="primarySB" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#5EA1FF"/>
+<stop offset="100%" stop-color="#4C8DFF"/>
+</linearGradient>
+</defs>
+<rect x="0" y="0" width="320" height="900" fill="#FFFFFF"/>
+<rect x="0" y="0" width="320" height="64" fill="#FFFFFF"/>
+<text x="72" y="40" fill="#333333" font-size="18" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">校园通</text>
+<circle cx="40" cy="32" r="14" fill="#34C79A"/>
+
+<text x="24" y="104" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">导航</text>
+<rect x="16" y="122" width="288" height="44" rx="12" fill="url(#primarySB)"/>
+<text x="40" y="150" fill="#FFFFFF" font-size="14" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">概览</text>
+
+<rect x="16" y="176" width="288" height="44" rx="12" fill="#F5F7FB"/>
+<text x="40" y="204" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">用户管理</text>
+
+<rect x="16" y="230" width="288" height="44" rx="12" fill="#F5F7FB"/>
+<text x="40" y="258" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">角色管理</text>
+
+<rect x="16" y="284" width="288" height="44" rx="12" fill="#F5F7FB"/>
+<text x="40" y="312" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">消费查询</text>
+
+<rect x="16" y="338" width="288" height="44" rx="12" fill="#F5F7FB"/>
+<text x="40" y="366" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">通知公告</text>
+
+<rect x="16" y="392" width="288" height="44" rx="12" fill="#F5F7FB"/>
+<text x="40" y="420" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">系统设置</text>
+
+<rect x="16" y="770" width="288" height="100" rx="16" fill="#F9FAFB"/>
+<circle cx="48" cy="820" r="20" fill="#A8DADC"/>
+<text x="80" y="818" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">小宇宙</text>
+<text x="80" y="842" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">管理员</text>
+</svg>

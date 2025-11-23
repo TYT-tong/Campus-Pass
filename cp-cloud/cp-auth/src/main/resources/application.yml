@@ -1,0 +1,56 @@
+server:
+  port: 9200
+
+spring:
+  application:
+    name: cp-auth
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      config:
+        server-addr: 192.168.253.132:8848
+        group: DEFAULT_GROUP
+        namespace: public
+        charset: UTF-8
+      discovery:
+        server-addr: 192.168.253.132:8848
+        username: nacos
+        password: nacos
+        namespace: public
+        register-enabled: true
+  config:
+    import:
+      - optional:nacos:application-${spring.profiles.active}.yml
+      - optional:nacos:${spring.application.name}-${spring.profiles.active}.yml
+      - optional:nacos:cp-security-${spring.profiles.active}.yml
+
+
+dubbo:
+  application:
+    name: cp-auth
+    metadata-type: local
+  registry:
+    address: nacos://192.168.253.132:8848?username=nacos&password=nacos
+  consumer:
+    check: false
+    timeout: 5000
+    retries: 0
+  metadata-report:
+    address: nacos://192.168.253.132:8848?username=nacos&password=nacos
+sms:
+  mock:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,configprops,env,beans  # 暴露指定端点
+  endpoint:
+    configprops:
+      show-values: always  # 可选：显示 configprops 的值细节
+      access: unrestricted
+    health:
+      show-details: always  # 可选：显示健康检查的细节

@@ -1,0 +1,85 @@
+erDiagram
+    USER {
+        int user_id PK "用户编号"
+        varchar user_name "姓名"
+        varchar nick_name "昵称"
+        varchar phoneNumber "手机号"
+        varcahr avatar "头像地址"
+        varchar password "密码"
+        varchar status  "状态"
+        int del_flag "删除标志（0代表存在 2代表删除）"
+        varchar login_time "登录时间"
+        varchar user_type "类型:00为管理员用户,
+        01:家长,02:学生" 
+        varchar remark "备注"
+        varchar backup "JSON：备用字段"
+    }
+    PARENT {
+        int parent_id PK, FK "USER.user_id"
+        varchar user_name "姓名"
+        int age "年龄"
+        varchar sex "性别"
+        varchar phone "手机号"
+        varchar backup "JSON：备用字段"
+    }
+    STUDENT {
+        int student_id PK, FK "USER.user_id"
+        varchar card_id FK "IC_CARD.card_id"
+        varchar student_name "姓名"
+       	int age "年龄"
+        varchar sex "性别"
+        varchar phone "手机号"
+        varchar ID_card "身份证号"
+        varchar class "班级"
+        varchar grade "年级"
+        varchar backup "JSON：备用字段"
+    }
+    IC_CARD {
+        varchar card_id PK "IC卡编号"
+        decimal balance "余额"
+        varchar status  "状态"
+        varchar backup "JSON：备用字段"
+    }
+    MERCHANT {
+        int merchant_id PK "商户编号"
+        varchar merchant_name "超市/食堂名称"
+        varchar merchant_type "类型：超市/食堂/便利店等"
+        varchar status "状态：启用/停用"
+        varchar backup "JSON：备用字段"
+    }
+    RECHARGE_RECORD {
+        int recharge_id PK "充值记录编号"
+        int parent_id FK "PARENT.parent_id" 
+        varchar card_id FK "IC_CARD.card_id"
+        decimal amount "充值金额"
+        datetime recharge_time "充值时间"
+        varchar payment_method "支付方式"
+        varchar backup "JSON：备用字段"
+    }
+    CONSUMPTION_RECORD {
+        int consumption_id PK "消费记录编号"
+        int student_id FK "STUDENT.student_id"
+        varchar card_id FK "IC_CARD.card_id"
+        int merchant_id FK "MERCHANT.merchant_id"
+        decimal amount "消费金额"
+        datetime consumption_time "消费时间"
+        varchar product_info "可选：消费商品/项目"
+        varchar backup "JSON：备用字段"
+    }
+    PARENT_STUDENT_RELATION {
+        int relation_id PK  "关系表编号"
+        int parent_id FK "PARENT.parent_id"
+        int student_id FK "STUDENT.student_id"
+        varchar guardian_type "关系"
+        varchar backup "JSON：备用字段"
+    }
+
+    USER ||--o{ PARENT : "泛化（继承）"
+    USER ||--o{ STUDENT : "泛化（继承）"
+    PARENT ||--o{ RECHARGE_RECORD : "一对多"
+    STUDENT ||--o{ CONSUMPTION_RECORD : "一对多"
+    IC_CARD ||--o{ RECHARGE_RECORD : "一对多"
+    IC_CARD ||--o{ CONSUMPTION_RECORD : "一对多"
+    MERCHANT ||--o{ CONSUMPTION_RECORD : "一对多"
+    PARENT }o--|| PARENT_STUDENT_RELATION : "一对多"
+    STUDENT }o--|| PARENT_STUDENT_RELATION : "一对多"

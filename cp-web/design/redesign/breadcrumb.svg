@@ -1,0 +1,91 @@
+<svg viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="100" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="50" y="30" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">面包屑导航组件样式</text>
+  
+  <!-- 示例1: 基础面包屑 -->
+  <text x="50" y="60" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">主页</text>
+  <text x="100" y="60" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="120" y="60" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">用户管理</text>
+  <text x="190" y="60" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="210" y="60" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">用户详情</text>
+  
+  <!-- 示例1说明 -->
+  <text x="50" y="80" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">基础样式：当前页面为普通文本</text>
+  
+  <!-- 分隔线 -->
+  <line x1="50" y1="90" x2="750" y2="90" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 示例2: 带链接面包屑 -->
+  <text x="50" y="120" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB" text-decoration="underline">主页</text>
+  <text x="100" y="120" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="120" y="120" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB" text-decoration="underline">交易管理</text>
+  <text x="190" y="120" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="210" y="120" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">消费记录查询</text>
+  
+  <!-- 示例2说明 -->
+  <text x="50" y="140" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">可点击样式：父级页面带下划线</text>
+  
+  <!-- 分隔线 -->
+  <line x1="50" y1="150" x2="750" y2="150" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 示例3: 图标面包屑 -->
+  <text x="50" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">🏠 主页</text>
+  <text x="110" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="130" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">👥 用户管理</text>
+  <text x="200" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="220" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📋 用户列表</text>
+  
+  <!-- 示例3说明 -->
+  <text x="50" y="200" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">图标样式：每个层级带对应图标</text>
+  
+  <!-- 分隔线 -->
+  <line x1="50" y1="210" x2="750" y2="210" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 示例4: 长路径面包屑 -->
+  <text x="50" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">主页</text>
+  <text x="100" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="120" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">系统管理</text>
+  <text x="190" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="210" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">权限管理</text>
+  <text x="280" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="300" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">角色管理</text>
+  <text x="370" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">&gt;</text>
+  <text x="390" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">编辑角色</text>
+  
+  <!-- 示例4说明 -->
+  <text x="50" y="260" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">长路径样式：支持多级嵌套导航</text>
+  
+  <!-- 分隔线 -->
+  <line x1="50" y1="270" x2="750" y2="270" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 示例5: 不同分隔符 -->
+  <text x="50" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">主页</text>
+  <text x="100" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">/</text>
+  <text x="120" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">用户管理</text>
+  <text x="190" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">/</text>
+  <text x="210" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">用户详情</text>
+  
+  <text x="300" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">|</text>
+  
+  <text x="330" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">主页</text>
+  <text x="380" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">»</text>
+  <text x="400" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB">用户管理</text>
+  <text x="470" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#C0C4CC">»</text>
+  <text x="490" y="300" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">用户详情</text>
+  
+  <!-- 示例5说明 -->
+  <text x="50" y="320" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">不同分隔符：/ 和 » 等可选样式</text>
+  
+  <!-- 样式规范说明 -->
+  <rect x="50" y="340" width="700" height="120" fill="#f5f7fa" rx="4" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="70" y="360" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">面包屑导航样式规范：</text>
+  
+  <text x="70" y="380" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">• 可点击的父级页面：#2F8CFB 蓝色，带下划线</text>
+  <text x="70" y="395" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">• 当前页面：#666 灰色，普通文本</text>
+  <text x="70" y="410" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">• 分隔符：#C0C4CC 浅灰色，默认使用 "&gt;"</text>
+  <text x="70" y="425" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">• 字体：14px，PingFang SC, Microsoft YaHei</text>
+  <text x="70" y="440" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">• 悬停效果：可点击项悬停时颜色加深</text>
+</svg>

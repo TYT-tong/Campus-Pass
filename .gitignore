@@ -1,0 +1,9 @@
+**/logs/**
+*.log
+target/
+build/
+.idea/
+.vscode/
+node_modules/
+.DS_Store
+res/AccessKey.txt

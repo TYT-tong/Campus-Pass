@@ -1,0 +1,223 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <!-- 定义阴影效果 -->
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="avatarClip">
+      <circle cx="1148" cy="35" r="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- 全局背景 -->
+  <rect width="1200" height="750" fill="#F7F8FC"/>
+
+  <!-- 侧边栏 -->
+  <rect width="220" height="750" fill="#FFFFFF" filter="url(#shadow)"/>
+  
+  <!-- Logo -->
+  <g transform="translate(25 20)">
+    <circle cx="15" cy="15" r="15" fill="#2DCDA3"/>
+    <path d="M12 10 L18 10 L15 15 Z" fill="#FFFFFF"/>
+    <path d="M10 16 L20 16 L15 22 Z" fill="#FFFFFF" opacity="0.7"/>
+    <text x="40" y="21" font-size="18" font-weight="bold" fill="#303133">校园通后台</text>
+  </g>
+
+  <!-- 菜单 -->
+  <g font-size="15" fill="#303133" transform="translate(0 80)">
+    <!-- 主页 (Active) -->
+    <g transform="translate(20 0)">
+      <rect width="180" height="48" rx="8" fill="#E9FAF5"/>
+      <rect width="4" height="48" rx="2" fill="#2DCDA3"/>
+      <path d="M20 16 h-4 a2 2 0 0 0 -2 2 v12 a2 2 0 0 0 2 2 h4z M22 16 h4 a2 2 0 0 1 2 2 v12 a2 2 0 0 1 -2 2 h-4z" fill="#2DCDA3" transform="translate(-15 1) scale(0.7)"/>
+      <text x="40" y="29" fill="#2DCDA3" font-weight="600">主页 / Dashboard</text>
+    </g>
+    <!-- 用户管理 -->
+    <g transform="translate(20 58)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M25 14 c2.76 0 5 2.24 5 5 s-2.24 5 -5 5 s-5 -2.24 -5 -5 s2.24 -5 5 -5z M25 26 c-5.33 0 -16 2.67 -16 8 v4 h32 v-4 c0 -5.33 -10.67 -8 -16 -8z" fill="#909399" transform="translate(-15 -2) scale(0.7)"/>
+      <text x="40" y="29">用户管理</text>
+    </g>
+    <!-- 角色管理 -->
+    <g transform="translate(20 116)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="#909399" transform="translate(0 10) scale(0.8)"/>
+      <text x="40" y="29">角色管理</text>
+    </g>
+    <!-- 消费记录 -->
+    <g transform="translate(20 174)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" fill="#909399" transform="translate(-2 12) scale(0.9)"/>
+      <text x="40" y="29">消费记录查询</text>
+    </g>
+    <!-- 通知公告 -->
+    <g transform="translate(20 232)">
+      <rect width="200" height="48" rx="8" fill="transparent"/>
+      <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="#909399" transform="translate(-2 12) scale(0.9)"/>
+      <text x="40" y="29">通知公告</text>
+    </g>
+  </g>
+
+  <!-- 主内容区 -->
+  <g transform="translate(220 0)">
+    <!-- 顶部栏 -->
+    <rect width="980" height="70" fill="#FFFFFF"/>
+    
+    <!-- 面包屑 -->
+    <text x="40" y="42" font-size="14" fill="#909399">
+      <tspan fill="#303133" font-weight="600">校园通</tspan> / <tspan>主页</tspan>
+    </text>
+
+    <!-- 右侧图标 -->
+    <g transform="translate(800 0)">
+        <!-- 通知 -->
+        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="#909399" transform="translate(250 18) scale(0.8)"/>
+        <circle cx="273" cy="23" r="4" fill="#F56C6C"/>
+        <!-- 用户头像 -->
+        <image href="https://i.pravatar.cc/32" width="32" height="32" clip-path="url(#avatarClip)"/>
+        <text x="1095" y="42" font-size="14" fill="#303133">小宇宙</text>
+    </g>
+    
+    <!-- 内容面板 -->
+    <g transform="translate(40 100)">
+      <!-- 统计卡片 -->
+      <g transform="translate(0 0)">
+        <!-- 总用户数卡片 -->
+        <rect width="280" height="120" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+        <g transform="translate(20 20)">
+          <circle cx="20" cy="20" r="20" fill="#E9FAF5"/>
+          <path d="M16 11c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 12c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z" fill="#2DCDA3" transform="translate(4 4) scale(0.8)"/>
+          <text x="50" y="15" font-size="14" fill="#909399">总用户数</text>
+          <text x="50" y="40" font-size="28" font-weight="bold" fill="#303133">1,234</text>
+          <text x="50" y="60" font-size="12" fill="#67C23A">↑ 12.5%</text>
+        </g>
+      </g>
+
+      <!-- 今日交易卡片 -->
+      <g transform="translate(300 0)">
+        <rect width="280" height="120" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+        <g transform="translate(20 20)">
+          <circle cx="20" cy="20" r="20" fill="#FFF4E6"/>
+          <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#E6A23C" transform="translate(4 4) scale(0.8)"/>
+          <text x="50" y="15" font-size="14" fill="#909399">今日交易</text>
+          <text x="50" y="40" font-size="28" font-weight="bold" fill="#303133">¥5,678</text>
+          <text x="50" y="60" font-size="12" fill="#67C23A">↑ 8.2%</text>
+        </g>
+      </g>
+
+      <!-- 今日订单卡片 -->
+      <g transform="translate(600 0)">
+        <rect width="280" height="120" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+        <g transform="translate(20 20)">
+          <circle cx="20" cy="20" r="20" fill="#F0F9FF"/>
+          <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm-1 13h-3v3h-2v-3H7v-2h3V8h2v3h3v2z" fill="#409EFF" transform="translate(4 4) scale(0.8)"/>
+          <text x="50" y="15" font-size="14" fill="#909399">今日订单</text>
+          <text x="50" y="40" font-size="28" font-weight="bold" fill="#303133">89</text>
+          <text x="50" y="60" font-size="12" fill="#F56C6C">↓ 3.1%</text>
+        </g>
+      </g>
+
+      <!-- 图表区域 -->
+      <g transform="translate(0 150)">
+        <!-- 交易趋势图 -->
+        <rect width="660" height="300" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+        <text x="30" y="40" font-size="16" font-weight="bold" fill="#303133">交易趋势</text>
+        
+        <!-- 图表网格线 -->
+        <g transform="translate(30 70)" stroke="#EBEEF5" stroke-width="1">
+          <line x1="0" y1="0" x2="600" y2="0"/>
+          <line x1="0" y1="40" x2="600" y2="40"/>
+          <line x1="0" y1="80" x2="600" y2="80"/>
+          <line x1="0" y1="120" x2="600" y2="120"/>
+          <line x1="0" y1="160" x2="600" y2="160"/>
+        </g>
+        
+        <!-- 折线图 -->
+        <g transform="translate(30 70)" stroke="#2DCDA3" stroke-width="2" fill="none">
+          <path d="M0 140 L100 120 L200 100 L300 110 L400 80 L500 60 L600 40"/>
+          <g fill="#2DCDA3">
+            <circle cx="0" cy="140" r="4"/>
+            <circle cx="100" cy="120" r="4"/>
+            <circle cx="200" cy="100" r="4"/>
+            <circle cx="300" cy="110" r="4"/>
+            <circle cx="400" cy="80" r="4"/>
+            <circle cx="500" cy="60" r="4"/>
+            <circle cx="600" cy="40" r="4"/>
+          </g>
+        </g>
+        
+        <!-- X轴标签 -->
+        <g transform="translate(30 250)" font-size="12" fill="#909399">
+          <text x="0" y="15">11-08</text>
+          <text x="100" y="15">11-09</text>
+          <text x="200" y="15">11-10</text>
+          <text x="300" y="15">11-11</text>
+          <text x="400" y="15">11-12</text>
+          <text x="500" y="15">11-13</text>
+          <text x="600" y="15">11-14</text>
+        </g>
+      </g>
+
+      <!-- 快捷操作 -->
+      <g transform="translate(680 150)">
+        <rect width="220" height="300" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+        <text x="30" y="40" font-size="16" font-weight="bold" fill="#303133">快捷操作</text>
+        
+        <!-- 操作按钮 -->
+        <g transform="translate(30 80)" font-size="14" fill="#303133">
+          <rect width="160" height="40" rx="8" fill="#F7F8FC"/>
+          <text x="20" y="26">新增用户</text>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="#2DCDA3" transform="translate(130 12) scale(0.7)"/>
+          
+          <rect width="160" height="40" rx="8" fill="#F7F8FC" transform="translate(0 50)"/>
+          <text x="20" y="76">发布通知</text>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="#2DCDA3" transform="translate(130 62) scale(0.7)"/>
+          
+          <rect width="160" height="40" rx="8" fill="#F7F8FC" transform="translate(0 100)"/>
+          <text x="20" y="126">查看报表</text>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="#2DCDA3" transform="translate(130 112) scale(0.7)"/>
+          
+          <rect width="160" height="40" rx="8" fill="#F7F8FC" transform="translate(0 150)"/>
+          <text x="20" y="176">系统设置</text>
+          <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" fill="#2DCDA3" transform="translate(130 162) scale(0.7)"/>
+        </g>
+      </g>
+
+      <!-- 最新通知 -->
+      <g transform="translate(0 470)">
+        <rect width="900" height="180" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+        <text x="30" y="40" font-size="16" font-weight="bold" fill="#303133">最新通知</text>
+        <text x="850" y="40" font-size="14" fill="#2DCDA3">查看全部</text>
+        
+        <!-- 通知列表 -->
+        <g transform="translate(30 70)" font-size="14">
+          <g fill="#606266">
+            <circle cx="8" cy="8" r="4" fill="#F56C6C"/>
+            <text x="20" y="12">系统维护通知：将于今晚23:00-24:00进行系统维护</text>
+            <text x="800" y="12" fill="#909399">2025-11-14 09:30</text>
+          </g>
+          
+          <g transform="translate(0 35)" fill="#606266">
+            <circle cx="8" cy="8" r="4" fill="#E6A23C"/>
+            <text x="20" y="12">安全提醒：请及时更新密码</text>
+            <text x="800" y="12" fill="#909399">2025-11-13 15:20</text>
+          </g>
+          
+          <g transform="translate(0 70)" fill="#606266">
+            <circle cx="8" cy="8" r="4" fill="#67C23A"/>
+            <text x="20" y="12">新功能上线：消费记录导出功能已上线</text>
+            <text x="800" y="12" fill="#909399">2025-11-12 11:00</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1200" height="750" fill="#f8f9fa"/>
+  
+  <!-- 顶部导航栏 -->
+  <rect width="1200" height="60" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="30" cy="30" r="15" fill="#2F8CFB"/>
+  <text x="55" y="35" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">校园通后台管理系统</text>
+  <rect x="1050" y="15" width="80" height="30" rx="15" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="1090" y="33" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">管理员</text>
+  
+  <!-- 侧边栏 -->
+  <rect width="200" height="690" y="60" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="20" y="90" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">🏠 主页</text>
+  <text x="20" y="140" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">👥 用户管理</text>
+  <text x="20" y="190" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">🔧 角色管理</text>
+  <text x="20" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📊 消费记录</text>
+  <rect x="0" y="250" width="200" height="50" fill="#2F8CFB" opacity="0.1"/>
+  <text x="20" y="280" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB" font-weight="500">📢 通知公告</text>
+  
+  <!-- 主内容区 -->
+  <rect x="220" y="80" width="960" height="650" fill="#ffffff" rx="4" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 面包屑导航 -->
+  <text x="240" y="105" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">主页 &gt; 通知公告</text>
+  
+  <!-- 页面标题 -->
+  <text x="240" y="130" font-family="PingFang SC, Microsoft YaHei" font-size="18" fill="#222" font-weight="500">通知公告管理</text>
+  
+  <!-- 新增公告按钮 -->
+  <rect x="240" y="150" width="120" height="36" rx="4" fill="#2F8CFB"/>
+  <text x="300" y="172" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#ffffff" text-anchor="middle">➕ 新增公告</text>
+  
+  <!-- 筛选区域 -->
+  <rect x="240" y="200" width="920" height="60" fill="#f5f7fa" rx="4"/>
+  <text x="260" y="225" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">状态：</text>
+  <rect x="310" y="210" width="100" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="360" y="230" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" text-anchor="middle">全部状态</text>
+  
+  <text x="440" y="225" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">类型：</text>
+  <rect x="490" y="210" width="100" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="540" y="230" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" text-anchor="middle">全部类型</text>
+  
+  <text x="620" y="225" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">发布时间：</text>
+  <rect x="710" y="210" width="120" height="32" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="770" y="230" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" text-anchor="middle">全部时间</text>
+  
+  <rect x="850" y="210" width="80" height="32" rx="4" fill="#2F8CFB"/>
+  <text x="890" y="230" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#ffffff" text-anchor="middle">搜索</text>
+  
+  <!-- 公告列表 -->
+  <rect x="240" y="280" width="920" height="420" fill="#ffffff"/>
+  
+  <!-- 公告卡片1 -->
+  <rect x="240" y="280" width="920" height="80" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="270" cy="310" r="8" fill="#f56c6c" opacity="0.2"/>
+  <rect x="290" y="295" width="40" height="20" rx="10" fill="#f56c6c" opacity="0.1"/>
+  <text x="310" y="308" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#f56c6c" text-anchor="middle">重要</text>
+  <text x="350" y="308" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">关于2024年春季学期学费缴纳的通知</text>
+  <text x="290" y="330" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">各位同学请注意，2024年春季学期学费缴纳将于1月20日开始，请按时完成缴费...</text>
+  <text x="800" y="308" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">2024-01-15 14:30</text>
+  <text x="900" y="308" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#2F8CFB">编辑</text>
+  <text x="930" y="308" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#f56c6c">删除</text>
+  
+  <!-- 公告卡片2 -->
+  <rect x="240" y="360" width="920" height="80" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="270" cy="390" r="8" fill="#409eff" opacity="0.2"/>
+  <rect x="290" y="375" width="40" height="20" rx="10" fill="#409eff" opacity="0.1"/>
+  <text x="310" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#409eff" text-anchor="middle">通知</text>
+  <text x="350" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">图书馆春节期间开放时间调整</text>
+  <text x="290" y="410" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">根据学校安排，图书馆春节期间（2月10日-2月17日）开放时间调整为...</text>
+  <text x="800" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">2024-01-14 09:15</text>
+  <text x="900" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#2F8CFB">编辑</text>
+  <text x="930" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#f56c6c">删除</text>
+  
+  <!-- 公告卡片3 -->
+  <rect x="240" y="440" width="920" height="80" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="270" cy="470" r="8" fill="#e6a23c" opacity="0.2"/>
+  <rect x="290" y="455" width="40" height="20" rx="10" fill="#e6a23c" opacity="0.1"/>
+  <text x="310" y="468" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#e6a23c" text-anchor="middle">草稿</text>
+  <text x="350" y="468" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">校园卡系统维护升级通知（草稿）</text>
+  <text x="290" y="490" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">校园卡系统将于近期进行维护升级，具体时间另行通知...</text>
+  <text x="800" y="468" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">2024-01-13 16:45</text>
+  <text x="900" y="468" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#2F8CFB">编辑</text>
+  <text x="930" y="468" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#f56c6c">删除</text>
+  
+  <!-- 公告卡片4 -->
+  <rect x="240" y="520" width="920" height="80" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="270" cy="550" r="8" fill="#909399" opacity="0.2"/>
+  <rect x="290" y="535" width="50" height="20" rx="10" fill="#909399" opacity="0.1"/>
+  <text x="315" y="548" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#909399" text-anchor="middle">已过期</text>
+  <text x="360" y="548" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">2023年秋季学期期末考试时间通知</text>
+  <text x="290" y="570" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">2023年秋季学期期末考试将于12月20日开始，具体安排如下...</text>
+  <text x="800" y="548" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">2023-12-01 10:00</text>
+  <text x="900" y="548" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#2F8CFB">编辑</text>
+  <text x="930" y="548" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#f56c6c">删除</text>
+  
+  <!-- 公告卡片5 -->
+  <rect x="240" y="600" width="920" height="80" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="270" cy="630" r="8" fill="#67c23a" opacity="0.2"/>
+  <rect x="290" y="615" width="40" height="20" rx="10" fill="#67c23a" opacity="0.1"/>
+  <text x="310" y="628" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#67c23a" text-anchor="middle">活动</text>
+  <text x="350" y="628" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">2024年校园文化艺术节活动通知</text>
+  <text x="290" y="650" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">为丰富校园文化生活，学校将于3月份举办校园文化艺术节，欢迎广大师生积极参与...</text>
+  <text x="800" y="628" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999">2024-01-10 14:20</text>
+  <text x="900" y="628" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#2F8CFB">编辑</text>
+  <text x="930" y="628" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#f56c6c">删除</text>
+  
+  <!-- 分页 -->
+  <rect x="240" y="700" width="920" height="40" fill="#ffffff"/>
+  <text x="600" y="720" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666" text-anchor="middle">共 25 条公告，每页显示 5 条</text>
+</svg>

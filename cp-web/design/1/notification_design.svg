@@ -1,0 +1,120 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1200" height="800" fill="#f8fafc"/>
+  
+  <!-- 顶部导航栏 -->
+  <rect x="0" y="0" width="1200" height="60" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="30" cy="30" r="8" fill="#ec4899"/>
+  <text x="50" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#1e293b" font-weight="500">校园通后台管理系统</text>
+  
+  <!-- 用户头像和按钮 -->
+  <circle cx="1100" cy="30" r="16" fill="#f1f5f9"/>
+  <circle cx="1140" cy="30" r="16" fill="#f1f5f9"/>
+  <text x="1085" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">用户名</text>
+  
+  <!-- 侧边栏 -->
+  <rect x="0" y="60" width="240" height="740" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- 侧边栏菜单项 -->
+  <rect x="16" y="90" width="208" height="48" rx="8" fill="white"/>
+  <text x="48" y="118" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">🏠 首页</text>
+  
+  <rect x="16" y="150" width="208" height="48" rx="8" fill="white"/>
+  <text x="48" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">👥 用户管理</text>
+  
+  <rect x="16" y="210" width="208" height="48" rx="8" fill="white"/>
+  <text x="48" y="238" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">🎭 角色管理</text>
+  
+  <rect x="16" y="270" width="208" height="48" rx="8" fill="white"/>
+  <text x="48" y="298" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">💳 消费记录</text>
+  
+  <rect x="16" y="330" width="208" height="48" rx="8" fill="#fef7ff"/>
+  <text x="48" y="358" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7c3aed" font-weight="500">📢 通知公告</text>
+  
+  <!-- 面包屑 -->
+  <text x="264" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">通知公告 / 公告管理</text>
+  
+  <!-- 通知公告内容区域 -->
+  <rect x="264" y="110" width="912" height="660" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- 页面标题和操作区 -->
+  <text x="288" y="150" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#1e293b" font-weight="600">通知公告管理</text>
+  
+  <!-- 搜索框 -->
+  <rect x="288" y="170" width="300" height="40" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="308" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">🔍 搜索公告标题...</text>
+  
+  <!-- 发布公告按钮 -->
+  <rect x="1016" y="170" width="120" height="40" rx="8" fill="#7c3aed"/>
+  <text x="1046" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="white" font-weight="500">➕ 发布公告</text>
+  
+  <!-- 公告分类标签 -->
+  <rect x="288" y="230" width="864" height="50" rx="8" fill="#f8fafc"/>
+  <rect x="308" y="240" width="80" height="30" rx="15" fill="#7c3aed"/>
+  <text x="338" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="white" font-weight="500">全部</text>
+  
+  <rect x="408" y="240" width="100" height="30" rx="15" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="428" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">系统通知</text>
+  
+  <rect x="528" y="240" width="100" height="30" rx="15" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="548" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">维护公告</text>
+  
+  <rect x="648" y="240" width="100" height="30" rx="15" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="668" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">活动通知</text>
+  
+  <!-- 公告列表 -->
+  <rect x="288" y="300" width="864" height="420" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- 公告项 1 -->
+  <rect x="308" y="320" width="824" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="340" cy="350" r="20" fill="#fef3c7"/>
+  <text x="370" y="345" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#1e293b" font-weight="600">系统维护通知</text>
+  <text x="370" y="365" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">系统将于今晚进行例行维护</text>
+  <text x="308" y="385" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">发布人: 系统管理员 • 发布时间: 2024-01-15 14:30</text>
+  <rect x="1048" y="340" width="60" height="25" rx="6" fill="#f0f9ff"/>
+  <text x="1068" y="357" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#0ea5e9">查看</text>
+  
+  <!-- 公告项 2 -->
+  <rect x="308" y="420" width="824" height="80" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="340" cy="450" r="20" fill="#e0f2fe"/>
+  <text x="370" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#1e293b" font-weight="600">新功能上线通知</text>
+  <text x="370" y="465" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">用户管理功能已全面升级</text>
+  <text x="308" y="485" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">发布人: 产品管理员 • 发布时间: 2024-01-14 16:20</text>
+  <rect x="1048" y="440" width="60" height="25" rx="6" fill="#f0f9ff"/>
+  <text x="1068" y="457" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#0ea5e9">查看</text>
+  
+  <!-- 公告项 3 -->
+  <rect x="308" y="520" width="824" height="80" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="340" cy="550" r="20" fill="#dcfce7"/>
+  <text x="370" y="545" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#1e293b" font-weight="600">春节放假通知</text>
+  <text x="370" y="565" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">关于2024年春节放假的安排</text>
+  <text x="308" y="585" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">发布人: 行政管理员 • 发布时间: 2024-01-13 09:15</text>
+  <rect x="1048" y="540" width="60" height="25" rx="6" fill="#f0f9ff"/>
+  <text x="1068" y="557" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#0ea5e9">查看</text>
+  
+  <!-- 公告项 4 -->
+  <rect x="308" y="620" width="824" height="80" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <circle cx="340" cy="650" r="20" fill="#fce7f3"/>
+  <text x="370" y="645" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#1e293b" font-weight="600">安全提醒</text>
+  <text x="370" y="665" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">关于加强账户安全管理的通知</text>
+  <text x="308" y="685" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">发布人: 安全管理员 • 发布时间: 2024-01-12 11:45</text>
+  <rect x="1048" y="640" width="60" height="25" rx="6" fill="#f0f9ff"/>
+  <text x="1068" y="657" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#0ea5e9">查看</text>
+  
+  <!-- 分页 -->
+  <rect x="288" y="740" width="864" height="40" rx="8" fill="#f8fafc"/>
+  <text x="308" y="765" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#64748b">共 24 条公告</text>
+  <rect x="1050" y="725" width="30" height="30" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1060" y="745" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">‹</text>
+  <rect x="1090" y="725" width="30" height="30" rx="6" fill="#7c3aed"/>
+  <text x="1100" y="745" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="white">1</text>
+  <rect x="1130" y="725" width="30" height="30" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1140" y="745" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">2</text>
+  <rect x="1170" y="725" width="30" height="30" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1180" y="745" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748b">›</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="200" y="200" r="15" fill="#fce7f3" opacity="0.6"/>
+  <rect x="1000" y="400" width="25" height="25" rx="5" fill="#e0f2fe" opacity="0.6"/>
+  <polygon points="120,600 130,580 140,600" fill="#dcfce7" opacity="0.6"/>
+</svg>

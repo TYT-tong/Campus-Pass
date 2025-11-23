@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cp.personnel.mapper.PerStudentMapper">
+
+    <select id="selectStudentPage" resultType="com.cp.personnel.domain.vo.PerStudentVO">
+        SELECT
+        ps.student_id AS studentId,
+        ps.card_id AS cardId,
+        ps.student_name AS studentName,
+        ps.age AS age,
+        ps.sex AS sex,
+        ps.phone AS phone,
+        ps.stu_class AS stuClass,
+        ps.grade AS grade,
+        u.user_name AS userName,
+        u.status AS status,
+        (
+        SELECT pp.parent_name
+        FROM per_ps_relation spr
+        LEFT JOIN per_parent pp ON pp.parent_id = spr.parent_id
+        WHERE spr.student_id = ps.student_id
+        ORDER BY pp.create_time
+        LIMIT 1
+        ) AS parentName
+        FROM per_student ps
+        LEFT JOIN sys_user u ON u.user_id = ps.student_id
+
+        WHERE 1 = 1
+        <if test="dto.keyword != null and dto.keyword != ''">
+            AND (
+                ps.card_id LIKE CONCAT('%', #{dto.keyword}, '%')
+                OR ps.student_name LIKE CONCAT('%', #{dto.keyword}, '%')
+                OR ps.phone LIKE CONCAT('%', #{dto.keyword}, '%')
+            )
+        </if>
+        <if test="dto.grade != null and dto.grade != ''">
+            AND ps.grade = #{dto.grade}
+        </if>
+        <if test="dto.className != null and dto.className != ''">
+            AND ps.stu_class = #{dto.className}
+        </if>
+        <if test="dto.status != null and dto.status != ''">
+            AND u.status = #{dto.status}
+        </if>
+    </select>
+
+    
+</mapper>

@@ -1,0 +1,91 @@
+<svg width="300" height="900" viewBox="0 0 300 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC0CB;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影效果 -->
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="2" dy="0" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.1"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 主背景 -->
+  <rect width="300" height="900" fill="white" opacity="0.95" filter="url(#softShadow)"/>
+  
+  <!-- Logo区域 -->
+  <rect x="0" y="0" width="300" height="80" fill="#409EFF"/>
+  <circle cx="50" cy="40" r="20" fill="white"/>
+  <text x="80" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="500" fill="white">校园通</text>
+  
+  <!-- 用户信息 -->
+  <circle cx="50" cy="120" r="25" fill="#E6F2FF" stroke="white" stroke-width="2"/>
+  <text x="85" y="115" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">管理员</text>
+  <text x="85" y="130" font-family="Arial, sans-serif" font-size="12" fill="#666">admin@school.edu.cn</text>
+  
+  <!-- 主导航菜单 -->
+  <text x="20" y="180" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#999">主导航</text>
+  
+  <!-- 首页菜单项 -->
+  <rect x="10" y="190" width="280" height="50" fill="#409EFF" rx="8"/>
+  <text x="50" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="500" fill="white">🏠 首页</text>
+  
+  <!-- 用户管理菜单项 -->
+  <rect x="10" y="250" width="280" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="280" font-family="Arial, sans-serif" font-size="16" fill="#333">👥 用户管理</text>
+  
+  <!-- 角色管理菜单项 -->
+  <rect x="10" y="310" width="280" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="340" font-family="Arial, sans-serif" font-size="16" fill="#333">🔐 角色管理</text>
+  
+  <!-- 消费记录菜单项 -->
+  <rect x="10" y="370" width="280" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="400" font-family="Arial, sans-serif" font-size="16" fill="#333">💳 消费记录</text>
+  
+  <!-- 通知公告菜单项 -->
+  <rect x="10" y="430" width="280" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="460" font-family="Arial, sans-serif" font-size="16" fill="#333">📢 通知公告</text>
+  
+  <!-- 系统设置分组 -->
+  <text x="20" y="510" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#999">系统管理</text>
+  
+  <!-- 系统设置菜单项 -->
+  <rect x="10" y="520" width="280" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="550" font-family="Arial, sans-serif" font-size="16" fill="#333">⚙️ 系统设置</text>
+  
+  <!-- 数据备份菜单项 -->
+  <rect x="10" y="580" width="280" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="610" font-family="Arial, sans-serif" font-size="16" fill="#333">💾 数据备份</text>
+  
+  <!-- 日志管理菜单项 -->
+  <rect x="10" y="640" width="280" height="50" fill="white" rx="8" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="50" y="670" font-family="Arial, sans-serif" font-size="16" fill="#333">📋 日志管理</text>
+  
+  <!-- 子菜单示例（用户管理的展开状态） -->
+  <rect x="30" y="700" width="260" height="120" fill="#F5F5F5" rx="8"/>
+  <rect x="40" y="710" width="240" height="30" fill="#E6F2FF" rx="6"/>
+  <text x="60" y="728" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">• 用户列表</text>
+  
+  <rect x="40" y="745" width="240" height="30" fill="white" rx="6" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="60" y="763" font-family="Arial, sans-serif" font-size="14" fill="#666">• 新增用户</text>
+  
+  <rect x="40" y="780" width="240" height="30" fill="white" rx="6" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="60" y="798" font-family="Arial, sans-serif" font-size="14" fill="#666">• 用户导入</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="40" cy="850" r="30" fill="#FFA940" opacity="0.2"/>
+  <rect x="200" y="860" width="40" height="40" fill="#52C41A" opacity="0.2" transform="rotate(45 220 880)"/>
+  
+  <!-- 底部退出按钮 -->
+  <rect x="10" y="840" width="280" height="40" fill="white" rx="8" stroke="#FF4D94" stroke-width="1"/>
+  <text x="120" y="865" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#FF4D94">🚪 退出登录</text>
+</svg>

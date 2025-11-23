@@ -1,0 +1,108 @@
+<svg width="800" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC0CB;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影效果 -->
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.1"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 主背景 -->
+  <rect width="800" height="100" fill="white" opacity="0.95" filter="url(#softShadow)"/>
+  
+  <!-- 面包屑导航示例1：简单路径 -->
+  <text x="50" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">基础面包屑样式</text>
+  
+  <circle cx="50" cy="60" r="4" fill="#409EFF"/>
+  <text x="60" y="65" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">首页</text>
+  
+  <text x="110" y="65" font-family="Arial, sans-serif" font-size="14" fill="#999">/</text>
+  
+  <text x="130" y="65" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">用户管理</text>
+  
+  <text x="210" y="65" font-family="Arial, sans-serif" font-size="14" fill="#999">/</text>
+  
+  <text x="230" y="65" font-family="Arial, sans-serif" font-size="14" fill="#666">用户列表</text>
+  
+  <!-- 面包屑导航示例2：带图标 -->
+  <text x="50" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">带图标的面包屑样式</text>
+  
+  <text x="50" y="110" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">🏠 首页</text>
+  
+  <text x="110" y="110" font-family="Arial, sans-serif" font-size="14" fill="#999">→</text>
+  
+  <text x="130" y="110" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">🔐 权限管理</text>
+  
+  <text x="220" y="110" font-family="Arial, sans-serif" font-size="14" fill="#999">→</text>
+  
+  <text x="240" y="110" font-family="Arial, sans-serif" font-size="14" fill="#666">👥 角色管理</text>
+  
+  <!-- 分隔符样式展示 -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">不同分隔符样式</text>
+  
+  <!-- 斜杠分隔符 -->
+  <text x="450" y="50" font-family="Arial, sans-serif" font-size="12" fill="#666">斜杠 /</text>
+  <text x="450" y="70" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">首页</text>
+  <text x="490" y="70" font-family="Arial, sans-serif" font-size="14" fill="#999">/</text>
+  <text x="510" y="70" font-family="Arial, sans-serif" font-size="14" fill="#666">用户管理</text>
+  
+  <!-- 箭头分隔符 -->
+  <text x="450" y="90" font-family="Arial, sans-serif" font-size="12" fill="#666">箭头 →</text>
+  <text x="450" y="110" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">首页</text>
+  <text x="490" y="110" font-family="Arial, sans-serif" font-size="14" fill="#999">→</text>
+  <text x="510" y="110" font-family="Arial, sans-serif" font-size="14" fill="#666">用户管理</text>
+  
+  <!-- 大于号分隔符 -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="12" fill="#666">大于号 &gt;</text>
+  <text x="600" y="70" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">首页</text>
+  <text x="640" y="70" font-family="Arial, sans-serif" font-size="14" fill="#999">&gt;</text>
+  <text x="660" y="70" font-family="Arial, sans-serif" font-size="14" fill="#666">用户管理</text>
+  
+  <!-- 竖线分隔符 -->
+  <text x="600" y="90" font-family="Arial, sans-serif" font-size="12" fill="#666">竖线 |</text>
+  <text x="600" y="110" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">首页</text>
+  <text x="640" y="110" font-family="Arial, sans-serif" font-size="14" fill="#999">|</text>
+  <text x="660" y="110" font-family="Arial, sans-serif" font-size="14" fill="#666">用户管理</text>
+  
+  <!-- 交互状态展示 -->
+  <text x="50" y="140" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#333">交互状态样式</text>
+  
+  <!-- 悬停状态 -->
+  <rect x="50" y="150" width="60" height="25" fill="#E6F2FF" rx="4"/>
+  <text x="60" y="167" font-family="Arial, sans-serif" font-size="12" fill="#409EFF">首页</text>
+  
+  <text x="120" y="167" font-family="Arial, sans-serif" font-size="14" fill="#999">/</text>
+  
+  <rect x="140" y="150" width="80" height="25" fill="#E6F2FF" rx="4"/>
+  <text x="150" y="167" font-family="Arial, sans-serif" font-size="12" fill="#409EFF">用户管理</text>
+  
+  <text x="230" y="167" font-family="Arial, sans-serif" font-size="14" fill="#999">/</text>
+  
+  <text x="250" y="167" font-family="Arial, sans-serif" font-size="12" fill="#666">当前页面</text>
+  
+  <!-- 当前页面高亮 -->
+  <text x="50" y="190" font-family="Arial, sans-serif" font-size="12" fill="#666">当前页面高亮</text>
+  <text x="50" y="210" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">首页</text>
+  <text x="110" y="210" font-family="Arial, sans-serif" font-size="14" fill="#999">/</text>
+  <text x="130" y="210" font-family="Arial, sans-serif" font-size="14" fill="#409EFF">用户管理</text>
+  <text x="210" y="210" font-family="Arial, sans-serif" font-size="14" fill="#999">/</text>
+  <rect x="230" y="200" width="80" height="20" fill="#409EFF" rx="3"/>
+  <text x="240" y="213" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="white">用户详情</text>
+  
+  <!-- 装饰元素 -->
+  <circle cx="750" cy="30" r="15" fill="#FFA940" opacity="0.2"/>
+  <rect x="760" y="70" width="20" height="20" fill="#52C41A" opacity="0.2" transform="rotate(45 770 80)"/>
+  <polygon points="720,90 730,100 710,100" fill="#FF4D94" opacity="0.2"/>
+</svg>

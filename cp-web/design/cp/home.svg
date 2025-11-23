@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+<linearGradient id="bgPink" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#FFFFFF"/>
+<stop offset="55%" stop-color="#FFFFFF"/>
+<stop offset="100%" stop-color="#FDE3E8"/>
+</linearGradient>
+<linearGradient id="primary" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#5EA1FF"/>
+<stop offset="100%" stop-color="#4C8DFF"/>
+</linearGradient>
+<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="8"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="SourceGraphic"/>
+</filter>
+</defs>
+
+<rect x="0" y="0" width="1440" height="900" fill="url(#bgPink)"/>
+
+<rect x="0" y="0" width="1440" height="64" fill="#FFFFFF"/>
+<text x="72" y="40" fill="#333333" font-size="18" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">校园通后台管理系统</text>
+<circle cx="40" cy="32" r="14" fill="#34C79A"/>
+<text x="1260" y="40" fill="#777777" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">通知</text>
+<text x="1310" y="40" fill="#777777" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">帮助</text>
+<circle cx="1360" cy="32" r="14" fill="#A8DADC"/>
+
+<rect x="0" y="64" width="240" height="836" fill="#FFFFFF"/>
+<rect x="239" y="64" width="1" height="836" fill="#E6E6EB"/>
+<text x="32" y="104" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">导航</text>
+<rect x="24" y="126" width="192" height="40" rx="10" fill="url(#primary)"/>
+<text x="44" y="152" fill="#FFFFFF" font-size="14" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">概览</text>
+<rect x="24" y="174" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="200" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">用户管理</text>
+<rect x="24" y="222" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="248" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">角色管理</text>
+<rect x="24" y="270" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="296" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">消费查询</text>
+<rect x="24" y="318" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="344" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">通知公告</text>
+<rect x="24" y="366" width="192" height="40" rx="10" fill="#F5F7FB"/>
+<text x="44" y="392" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">系统设置</text>
+
+<text x="260" y="100" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">首页</text>
+<text x="304" y="100" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">›</text>
+<text x="320" y="100" fill="#333333" font-size="12" font-weight="600" font-family="Microsoft YaHei, PingFang SC, Arial">概览</text>
+
+<text x="260" y="144" fill="#333333" font-size="22" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">首页概览</text>
+
+<rect x="260" y="170" width="260" height="130" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+<text x="280" y="200" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">今日交易额</text>
+<text x="280" y="238" fill="#333333" font-size="26" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">¥ 128,560</text>
+<circle cx="488" cy="230" r="18" fill="#F8D882"/>
+
+<rect x="540" y="170" width="260" height="130" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+<text x="560" y="200" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">今日订单数</text>
+<text x="560" y="238" fill="#333333" font-size="26" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">3,245</text>
+<rect x="762" y="214" width="28" height="28" rx="6" fill="#A8DADC"/>
+
+<rect x="820" y="170" width="260" height="130" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+<text x="840" y="200" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">新增用户</text>
+<text x="840" y="238" fill="#333333" font-size="26" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">+ 86</text>
+<circle cx="1030" cy="230" r="18" fill="#F7A5B2"/>
+
+<rect x="1100" y="170" width="260" height="130" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+<text x="1120" y="200" fill="#777777" font-size="12" font-family="Microsoft YaHei, PingFang SC, Arial">系统消息</text>
+<text x="1120" y="238" fill="#333333" font-size="26" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">12</text>
+<rect x="1322" y="214" width="28" height="28" rx="6" fill="#F8D882"/>
+
+<rect x="260" y="322" width="720" height="430" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+<text x="280" y="352" fill="#333333" font-size="16" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">交易趋势</text>
+<rect x="280" y="372" width="680" height="300" rx="8" fill="#F5F7FB"/>
+<path d="M300 630 L360 520 L420 560 L480 480 L540 510 L600 450 L660 470 L720 430 L780 460 L940 420" stroke="url(#primary)" stroke-width="3" fill="none"/>
+<circle cx="360" cy="520" r="4" fill="#5EA1FF"/>
+<circle cx="480" cy="480" r="4" fill="#5EA1FF"/>
+<circle cx="600" cy="450" r="4" fill="#5EA1FF"/>
+
+<rect x="1000" y="322" width="360" height="430" rx="12" fill="#FFFFFF" filter="url(#shadow)"/>
+<text x="1020" y="352" fill="#333333" font-size="16" font-weight="700" font-family="Microsoft YaHei, PingFang SC, Arial">最新公告</text>
+<rect x="1020" y="372" width="320" height="64" rx="10" fill="#F5F7FB"/>
+<text x="1036" y="406" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">校园餐厅系统维护 22:00-23:00</text>
+<rect x="1020" y="444" width="320" height="64" rx="10" fill="#F5F7FB"/>
+<text x="1036" y="478" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">新学期校园卡充值优惠活动上线</text>
+<rect x="1020" y="516" width="320" height="64" rx="10" fill="#F5F7FB"/>
+<text x="1036" y="550" fill="#333333" font-size="14" font-family="Microsoft YaHei, PingFang SC, Arial">系统安全升级完成</text>
+
+<circle cx="940" cy="260" r="22" fill="#F8D882" opacity="0.5"/>
+<rect x="700" y="620" width="36" height="36" rx="8" fill="#A8DADC" opacity="0.5"/>
+<circle cx="1240" cy="200" r="16" fill="#F7A5B2" opacity="0.5"/>
+</svg>

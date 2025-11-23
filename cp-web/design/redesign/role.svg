@@ -1,0 +1,132 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1200" height="750" fill="#f8f9fa"/>
+  
+  <!-- 顶部导航栏 -->
+  <rect width="1200" height="60" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="30" cy="30" r="15" fill="#2F8CFB"/>
+  <text x="55" y="35" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">校园通后台管理系统</text>
+  <rect x="1050" y="15" width="80" height="30" rx="15" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="1090" y="33" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">管理员</text>
+  
+  <!-- 侧边栏 -->
+  <rect width="200" height="690" y="60" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="20" y="90" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">🏠 主页</text>
+  <text x="20" y="140" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">👥 用户管理</text>
+  <rect x="0" y="150" width="200" height="50" fill="#2F8CFB" opacity="0.1"/>
+  <text x="20" y="180" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB" font-weight="500">🔧 角色管理</text>
+  <text x="20" y="230" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📊 消费记录</text>
+  <text x="20" y="280" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📢 通知公告</text>
+  
+  <!-- 主内容区 -->
+  <rect x="220" y="80" width="960" height="650" fill="#ffffff" rx="4" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 面包屑导航 -->
+  <text x="240" y="105" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">主页 &gt; 角色管理</text>
+  
+  <!-- 页面标题 -->
+  <text x="240" y="130" font-family="PingFang SC, Microsoft YaHei" font-size="18" fill="#222" font-weight="500">角色管理</text>
+  
+  <!-- 新增角色按钮 -->
+  <rect x="240" y="150" width="120" height="36" rx="4" fill="#2F8CFB"/>
+  <text x="300" y="172" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#ffffff" text-anchor="middle">➕ 新增角色</text>
+  
+  <!-- 角色卡片区域 -->
+  <rect x="240" y="200" width="920" height="480" fill="#ffffff"/>
+  
+  <!-- 超级管理员卡片 -->
+  <rect x="240" y="220" width="280" height="200" rx="8" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="270" cy="250" r="12" fill="#f56c6c" opacity="0.2"/>
+  <text x="295" y="258" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">超级管理员</text>
+  <text x="270" y="285" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">拥有系统的所有权限</text>
+  <text x="270" y="305" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">用户数量：5</text>
+  <text x="270" y="325" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">创建时间：2023-01-01</text>
+  
+  <!-- 权限标签 -->
+  <rect x="270" y="345" width="60" height="20" rx="10" fill="#f56c6c" opacity="0.1"/>
+  <text x="300" y="358" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#f56c6c" text-anchor="middle">用户管理</text>
+  <rect x="340" y="345" width="60" height="20" rx="10" fill="#f56c6c" opacity="0.1"/>
+  <text x="370" y="358" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#f56c6c" text-anchor="middle">角色管理</text>
+  <rect x="270" y="375" width="60" height="20" rx="10" fill="#f56c6c" opacity="0.1"/>
+  <text x="300" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#f56c6c" text-anchor="middle">系统设置</text>
+  <rect x="340" y="375" width="60" height="20" rx="10" fill="#f56c6c" opacity="0.1"/>
+  <text x="370" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#f56c6c" text-anchor="middle">数据管理</text>
+  
+  <!-- 操作按钮 -->
+  <rect x="270" y="405" width="60" height="24" rx="4" fill="#2F8CFB"/>
+  <text x="300" y="421" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#ffffff" text-anchor="middle">编辑</text>
+  <rect x="340" y="405" width="60" height="24" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="370" y="421" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">删除</text>
+  
+  <!-- 学生卡片 -->
+  <rect x="560" y="220" width="280" height="200" rx="8" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="590" cy="250" r="12" fill="#409eff" opacity="0.2"/>
+  <text x="615" y="258" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">学生</text>
+  <text x="590" y="285" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">普通学生用户权限</text>
+  <text x="590" y="305" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">用户数量：8,234</text>
+  <text x="590" y="325" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">创建时间：2023-01-01</text>
+  
+  <!-- 权限标签 -->
+  <rect x="590" y="345" width="60" height="20" rx="10" fill="#409eff" opacity="0.1"/>
+  <text x="620" y="358" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#409eff" text-anchor="middle">个人信息</text>
+  <rect x="660" y="345" width="60" height="20" rx="10" fill="#409eff" opacity="0.1"/>
+  <text x="690" y="358" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#409eff" text-anchor="middle">消费查询</text>
+  <rect x="590" y="375" width="60" height="20" rx="10" fill="#409eff" opacity="0.1"/>
+  <text x="620" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#409eff" text-anchor="middle">卡片管理</text>
+  <rect x="660" y="375" width="60" height="20" rx="10" fill="#409eff" opacity="0.1"/>
+  <text x="690" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#409eff" text-anchor="middle">充值缴费</text>
+  
+  <!-- 操作按钮 -->
+  <rect x="590" y="405" width="60" height="24" rx="4" fill="#2F8CFB"/>
+  <text x="620" y="421" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#ffffff" text-anchor="middle">编辑</text>
+  <rect x="660" y="405" width="60" height="24" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="690" y="421" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">删除</text>
+  
+  <!-- 商户卡片 -->
+  <rect x="880" y="220" width="280" height="200" rx="8" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="910" cy="250" r="12" fill="#e6a23c" opacity="0.2"/>
+  <text x="935" y="258" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">商户</text>
+  <text x="910" y="285" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">校园商户管理权限</text>
+  <text x="910" y="305" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">用户数量：156</text>
+  <text x="910" y="325" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">创建时间：2023-01-01</text>
+  
+  <!-- 权限标签 -->
+  <rect x="910" y="345" width="60" height="20" rx="10" fill="#e6a23c" opacity="0.1"/>
+  <text x="940" y="358" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#e6a23c" text-anchor="middle">商品管理</text>
+  <rect x="980" y="345" width="60" height="20" rx="10" fill="#e6a23c" opacity="0.1"/>
+  <text x="1010" y="358" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#e6a23c" text-anchor="middle">订单查询</text>
+  <rect x="910" y="375" width="60" height="20" rx="10" fill="#e6a23c" opacity="0.1"/>
+  <text x="940" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#e6a23c" text-anchor="middle">财务统计</text>
+  <rect x="980" y="375" width="60" height="20" rx="10" fill="#e6a23c" opacity="0.1"/>
+  <text x="1010" y="388" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#e6a23c" text-anchor="middle">店铺设置</text>
+  
+  <!-- 操作按钮 -->
+  <rect x="910" y="405" width="60" height="24" rx="4" fill="#2F8CFB"/>
+  <text x="940" y="421" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#ffffff" text-anchor="middle">编辑</text>
+  <rect x="980" y="405" width="60" height="24" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="1010" y="421" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">删除</text>
+  
+  <!-- 第二行卡片 -->
+  <rect x="240" y="440" width="280" height="200" rx="8" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="270" cy="470" r="12" fill="#67c23a" opacity="0.2"/>
+  <text x="295" y="478" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">财务管理员</text>
+  <text x="270" y="505" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">财务相关管理权限</text>
+  <text x="270" y="525" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">用户数量：12</text>
+  <text x="270" y="545" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">创建时间：2023-01-01</text>
+  
+  <!-- 权限标签 -->
+  <rect x="270" y="565" width="60" height="20" rx="10" fill="#67c23a" opacity="0.1"/>
+  <text x="300" y="578" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#67c23a" text-anchor="middle">财务报表</text>
+  <rect x="340" y="565" width="60" height="20" rx="10" fill="#67c23a" opacity="0.1"/>
+  <text x="370" y="578" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#67c23a" text-anchor="middle">对账管理</text>
+  <rect x="270" y="595" width="60" height="20" rx="10" fill="#67c23a" opacity="0.1"/>
+  <text x="300" y="608" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#67c23a" text-anchor="middle">收支统计</text>
+  <rect x="340" y="595" width="60" height="20" rx="10" fill="#67c23a" opacity="0.1"/>
+  <text x="370" y="608" font-family="PingFang SC, Microsoft YaHei" font-size="10" fill="#67c23a" text-anchor="middle">预算管理</text>
+  
+  <!-- 操作按钮 -->
+  <rect x="270" y="625" width="60" height="24" rx="4" fill="#2F8CFB"/>
+  <text x="300" y="641" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#ffffff" text-anchor="middle">编辑</text>
+  <rect x="340" y="625" width="60" height="24" rx="4" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="370" y="641" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">删除</text>
+</svg>

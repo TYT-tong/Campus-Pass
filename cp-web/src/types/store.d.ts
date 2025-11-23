@@ -1,0 +1,161 @@
+// Store 状态类型定义
+
+// 用户状态类型
+export interface UserState {
+  token: string
+  id: string
+  name: string
+  nickName: string
+  avatar: string
+  roles: string[]
+  permissions: string[]
+  expires_in: string
+}
+
+// 权限状态类型
+export interface PermissionState {
+  routes: any[]
+  addRoutes: any[]
+  sidebarRouters: any[]
+  topbarRouters: any[]
+  defaultRoutes: any[]
+  childrenRoutes: any[]
+  linkRoutes: any[]
+}
+
+// 应用状态类型
+export interface AppState {
+  sidebar: {
+    opened: boolean
+    withoutAnimation: boolean
+    hide?: boolean
+  }
+  device: string
+  size: string
+  fixedHeader?: boolean
+}
+
+// 设置状态类型
+export interface SettingsState {
+  title: string
+  theme: string
+  sideTheme: string
+  showSettings: boolean
+  topNav: boolean
+  tagsView: boolean
+  fixedHeader: boolean
+  sidebarLogo: boolean
+  dynamicTitle: boolean
+  errorLog: string[]
+  pageTitle: string
+  isUseCdn: boolean
+  isUseWaterMark: boolean
+  isUseColor: boolean
+  isUseTabs: boolean
+  isUseBreadcrumb: boolean
+  isUseTopNav: boolean
+  isUseFooter: boolean
+  isUseRefresh: boolean
+  isUseSearch: boolean
+  isUseNotice: boolean
+  isUseFullScren: boolean
+  isUseSize: boolean
+  isUseLang: boolean
+  isUseDark: boolean
+  isUseWaterMarker: boolean
+  version: string
+  fixedHeaderOpen: boolean
+  showTabsBar: boolean
+  showTabsBarIcon: boolean
+  tabsBarIconType: string
+  showLogo: boolean
+  showBreadcrumb: boolean
+  showBreadcrumbIcon: boolean
+  showFooter: boolean
+  showFullScren: boolean
+  showLang: boolean
+  showSize: boolean
+  showTheme: boolean
+  showDark: boolean
+  showWaterMarker: boolean
+  showRefresh: boolean
+  showSearch: boolean
+  showNotice: boolean
+  showTagsView: boolean
+  showTopNav: boolean
+  showSidebarLogo: boolean
+  showSidebar: boolean
+  sidebarOpen: boolean
+  sidebarWidth: number
+  sidebarTheme: string
+  themeColor: string
+  layout: string
+  watermarkText: string
+  watermarkColor: string
+  watermarkFontSize: number
+  watermarkOpacity: number
+  watermarkRotate: number
+  watermarkGap: number
+  watermarkOffset: number
+  watermarkZIndex: number
+  watermarkParent: string
+  watermarkMode: string
+  watermarkId: string
+  watermarkClass: string
+  watermarkStyle: string
+  watermarkContent: string
+  watermarkImage: string
+  watermarkImageWidth: number
+  watermarkImageHeight: number
+  watermarkImageOpacity: number
+  watermarkImageRotate: number
+  watermarkImageGap: number
+  watermarkImageOffset: number
+  watermarkImageZIndex: number
+  watermarkImageParent: string
+  watermarkImageMode: string
+  watermarkImageId: string
+  watermarkImageClass: string
+  watermarkImageStyle: string
+  watermarkImageContent: string
+  watermarkImageUrl: string
+  watermarkImagePosition: string
+  watermarkImageRepeat: string
+  watermarkImageSize: string
+  watermarkImageOrigin: string
+  watermarkImageClip: string
+  watermarkImageBackground: string
+  watermarkImageBorder: string
+  watermarkImagePadding: string
+  watermarkImageMargin: string
+  watermarkImageDisplay: string
+  watermarkImageVisibility: string
+  watermarkImageOverflow: string
+  watermarkImageFloat: string
+  watermarkImageClear: string
+  watermarkImageCursor: string
+  watermarkImageResize: string
+  watermarkImageOutline: string
+  watermarkImageOutlineOffset: number
+  watermarkImageOutlineWidth: number
+  watermarkImageOutlineStyle: string
+  watermarkImageOutlineColor: string
+  watermarkImageBorderRadius: number
+  watermarkImageBoxShadow: string
+  watermarkImageTextShadow: string
+  watermarkImageTransform: string
+  watermarkImageTransformOrigin: string
+  watermarkImagePerspective: number
+  watermarkImagePerspectiveOrigin: string
+  watermarkImageBackfaceVisibility: string
+  watermarkImageTransformStyle: string
+  watermarkImageUserSelect: string
+  watermarkImagePointerEvents: string
+  watermarkImageTouchAction: string
+  watermarkImageWillChange: string
+  watermarkImageFilter: string
+  watermarkImageBackdropFilter: string
+  watermarkImageMixBlendMode: string
+  watermarkImageBackgroundBlendMode: string
+  watermarkImageIsolation: string
+}

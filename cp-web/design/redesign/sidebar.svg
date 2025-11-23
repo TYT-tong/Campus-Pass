@@ -1,0 +1,65 @@
+<svg viewBox="0 0 300 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="300" height="750" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- Logo区域 -->
+  <rect width="300" height="80" fill="#f5f7fa" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="40" cy="40" r="20" fill="#2F8CFB"/>
+  <text x="75" y="45" font-family="PingFang SC, Microsoft YaHei" font-size="18" fill="#222" font-weight="500">校园通</text>
+  
+  <!-- 用户头像区域 -->
+  <rect x="20" y="100" width="260" height="60" fill="#f0f9ff" rx="8" stroke="#b3d8ff" stroke-width="1"/>
+  <circle cx="50" cy="130" r="18" fill="#2F8CFB" opacity="0.2"/>
+  <text x="80" y="125" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">管理员</text>
+  <text x="80" y="145" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">admin@campus.com</text>
+  
+  <!-- 导航菜单 -->
+  <text x="20" y="190" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999" font-weight="500">主导航</text>
+  
+  <!-- 主页菜单项 (激活状态) -->
+  <rect x="0" y="200" width="300" height="50" fill="#2F8CFB" opacity="0.1"/>
+  <rect x="0" y="200" width="4" height="50" fill="#2F8CFB"/>
+  <text x="50" y="230" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB" font-weight="500">🏠 主页</text>
+  
+  <!-- 用户管理菜单项 -->
+  <rect x="0" y="250" width="300" height="50" fill="#ffffff"/>
+  <text x="50" y="280" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">👥 用户管理</text>
+  
+  <!-- 角色管理菜单项 -->
+  <rect x="0" y="300" width="300" height="50" fill="#ffffff"/>
+  <text x="50" y="330" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">🔧 角色管理</text>
+  
+  <!-- 消费记录菜单项 -->
+  <rect x="0" y="350" width="300" height="50" fill="#ffffff"/>
+  <text x="50" y="380" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📊 消费记录</text>
+  
+  <!-- 通知公告菜单项 -->
+  <rect x="0" y="400" width="300" height="50" fill="#ffffff"/>
+  <text x="50" y="430" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📢 通知公告</text>
+  
+  <!-- 分隔线 -->
+  <line x1="20" y1="460" x2="280" y2="460" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 系统管理 -->
+  <text x="20" y="490" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#999" font-weight="500">系统管理</text>
+  
+  <!-- 系统设置菜单项 -->
+  <rect x="0" y="500" width="300" height="50" fill="#ffffff"/>
+  <text x="50" y="530" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">⚙️ 系统设置</text>
+  
+  <!-- 操作日志菜单项 -->
+  <rect x="0" y="550" width="300" height="50" fill="#ffffff"/>
+  <text x="50" y="580" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📝 操作日志</text>
+  
+  <!-- 数据统计菜单项 -->
+  <rect x="0" y="600" width="300" height="50" fill="#ffffff"/>
+  <text x="50" y="630" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📈 数据统计</text>
+  
+  <!-- 底部用户信息 -->
+  <rect x="20" y="680" width="260" height="50" fill="#f5f7fa" rx="8"/>
+  <circle cx="50" cy="705" r="15" fill="#2F8CFB" opacity="0.3"/>
+  <text x="80" y="700" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666">在线用户</text>
+  <text x="80" y="715" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#222" font-weight="500">1,234</text>
+  <rect x="200" y="690" width="60" height="30" rx="15" fill="#2F8CFB"/>
+  <text x="230" y="708" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#ffffff" text-anchor="middle">退出</text>
+</svg>

@@ -1,0 +1,170 @@
+<svg width="800" height="60" viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <!-- 定义渐变效果 -->
+  <defs>
+    <linearGradient id="breadcrumbBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F7F8FC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="60" fill="url(#breadcrumbBg)"/>
+
+  <!-- 面包屑导航示例1: 主页路径 -->
+  <g transform="translate(20 20)">
+    <text x="0" y="20" font-size="14" fill="#909399" font-weight="500">主页</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(45 5) scale(0.7)"/>
+    
+    <text x="70" y="20" font-size="14" fill="#909399" font-weight="500">用户管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(145 5) scale(0.7)"/>
+    
+    <text x="170" y="20" font-size="14" fill="#303133" font-weight="600">用户列表</text>
+  </g>
+
+  <!-- 面包屑导航示例2: 交易管理路径 -->
+  <g transform="translate(20 50)">
+    <text x="0" y="20" font-size="14" fill="#909399" font-weight="500">校园通</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(55 5) scale(0.7)"/>
+    
+    <text x="80" y="20" font-size="14" fill="#909399" font-weight="500">交易管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(155 5) scale(0.7)"/>
+    
+    <text x="180" y="20" font-size="14" fill="#303133" font-weight="600">消费记录查询</text>
+  </g>
+
+  <!-- 面包屑导航示例3: 系统管理路径 -->
+  <g transform="translate(20 80)">
+    <text x="0" y="20" font-size="14" fill="#909399" font-weight="500">系统管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(75 5) scale(0.7)"/>
+    
+    <text x="100" y="20" font-size="14" fill="#909399" font-weight="500">角色管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(175 5) scale(0.7)"/>
+    
+    <text x="200" y="20" font-size="14" fill="#303133" font-weight="600">编辑角色</text>
+  </g>
+
+  <!-- 面包屑导航示例4: 通知公告路径 -->
+  <g transform="translate(20 110)">
+    <text x="0" y="20" font-size="14" fill="#909399" font-weight="500">校园通</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(55 5) scale(0.7)"/>
+    
+    <text x="80" y="20" font-size="14" fill="#909399" font-weight="500">内容管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(155 5) scale(0.7)"/>
+    
+    <text x="180" y="20" font-size="14" fill="#303133" font-weight="600">通知公告</text>
+  </g>
+
+  <!-- 面包屑导航示例5: 多层级路径 -->
+  <g transform="translate(20 140)">
+    <text x="0" y="20" font-size="14" fill="#909399" font-weight="500">主页</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(45 5) scale(0.7)"/>
+    
+    <text x="70" y="20" font-size="14" fill="#909399" font-weight="500">系统管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(145 5) scale(0.7)"/>
+    
+    <text x="170" y="20" font-size="14" fill="#909399" font-weight="500">用户管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(245 5) scale(0.7)"/>
+    
+    <text x="270" y="20" font-size="14" fill="#303133" font-weight="600">用户详情</text>
+  </g>
+
+  <!-- 面包屑导航示例6: 带图标版本 -->
+  <g transform="translate(20 170)">
+    <!-- 主页图标 -->
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="#2DCDA3" transform="translate(0 2) scale(0.8)"/>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(25 5) scale(0.7)"/>
+    
+    <text x="50" y="20" font-size="14" fill="#909399" font-weight="500">交易管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(125 5) scale(0.7)"/>
+    
+    <text x="150" y="20" font-size="14" fill="#303133" font-weight="600">消费记录查询</text>
+  </g>
+
+  <!-- 面包屑导航示例7: 可点击样式 -->
+  <g transform="translate(20 200)">
+    <!-- 可点击的链接样式 -->
+    <g transform="translate(0 0)" style="cursor: pointer">
+      <rect width="40" height="24" rx="4" fill="#F7F8FC" opacity="0.5"/>
+      <text x="5" y="16" font-size="14" fill="#2DCDA3" font-weight="500">主页</text>
+    </g>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(50 5) scale(0.7)"/>
+    
+    <!-- 可点击的链接样式 -->
+    <g transform="translate(75 0)" style="cursor: pointer">
+      <rect width="80" height="24" rx="4" fill="#F7F8FC" opacity="0.5"/>
+      <text x="5" y="16" font-size="14" fill="#2DCDA3" font-weight="500">用户管理</text>
+    </g>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(160 5) scale(0.7)"/>
+    
+    <!-- 当前页面 (不可点击) -->
+    <text x="185" y="20" font-size="14" fill="#303133" font-weight="600">编辑用户</text>
+  </g>
+
+  <!-- 面包屑导航示例8: 带统计信息 -->
+  <g transform="translate(20 230)">
+    <text x="0" y="20" font-size="14" fill="#909399" font-weight="500">主页</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(45 5) scale(0.7)"/>
+    
+    <text x="70" y="20" font-size="14" fill="#909399" font-weight="500">用户管理</text>
+    
+    <!-- 分隔符 -->
+    <path d="M9 18l6-6-6-6" stroke="#C0C4CC" stroke-width="1.5" fill="none" transform="translate(145 5) scale(0.7)"/>
+    
+    <text x="170" y="20" font-size="14" fill="#303133" font-weight="600">用户列表</text>
+    
+    <!-- 统计信息 -->
+    <g transform="translate(250 0)">
+      <rect width="60" height="24" rx="12" fill="#E9FAF5"/>
+      <text x="30" y="16" font-size="12" fill="#2DCDA3" text-anchor="middle">共 1,234 条</text>
+    </g>
+  </g>
+
+  <!-- 设计规范说明 -->
+  <g transform="translate(20 270)">
+    <text x="0" y="20" font-size="16" font-weight="bold" fill="#303133">面包屑导航设计规范</text>
+    
+    <text x="0" y="45" font-size="12" fill="#606266">• 分隔符使用右箭头符号 (>)，颜色为 #C0C4CC</text>
+    <text x="0" y="65" font-size="12" fill="#606266">• 可点击的链接使用 #2DCDA3，当前页面使用 #303133</text>
+    <text x="0" y="85" font-size="12" fill="#606266">• 字体大小统一为 14px，当前页面加粗显示</text>
+    <text x="0" y="105" font-size="12" fill="#606266">• 支持图标显示，可添加统计信息或操作按钮</text>
+    <text x="0" y="125" font-size="12" fill="#606266">• 悬停效果：背景色变化，显示下划线</text>
+  </g>
+
+  <!-- 悬停效果示例 -->
+  <g transform="translate(400 200)" opacity="0.3">
+    <rect width="200" height="30" rx="4" fill="#F7F8FC"/>
+    <text x="10" y="18" font-size="12" fill="#909399">悬停效果示例</text>
+  </g>
+</svg>

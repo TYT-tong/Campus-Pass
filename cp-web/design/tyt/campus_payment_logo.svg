@@ -1,0 +1,164 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC0CB;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="studentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#409EFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#52C41A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="parentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFA940;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4D94;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="schoolGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#52C41A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#409EFF;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 阴影效果 -->
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.1"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- 发光效果 -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- 主背景 -->
+  <rect width="500" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- 主要Logo容器 -->
+  <circle cx="250" cy="200" r="150" fill="white" filter="url(#softShadow)"/>
+  
+  <!-- 连接圆环 - 象征三者连接 -->
+  <circle cx="250" cy="200" r="130" fill="none" stroke="#E6F7FF" stroke-width="8" stroke-dasharray="15,5" opacity="0.6"/>
+  
+  <!-- 学生图标 (左侧) -->
+  <g transform="translate(180, 160)">
+    <!-- 学生身体 -->
+    <circle cx="0" cy="-25" r="18" fill="url(#studentGradient)"/>
+    <!-- 学生头部 -->
+    <circle cx="0" cy="-45" r="12" fill="#FFE4E1"/>
+    <!-- 学生帽子 -->
+    <polygon points="-8,-50 0,-55 8,-50" fill="#409EFF" opacity="0.8"/>
+    <!-- 学生身体 -->
+    <rect x="-10" cy="-15" width="20" height="25" fill="url(#studentGradient)" rx="3"/>
+    <!-- 学生手臂 -->
+    <rect x="-18" cy="-10" width="8" height="15" fill="url(#studentGradient)" rx="2"/>
+    <rect x="10" cy="-10" width="8" height="15" fill="url(#studentGradient)" rx="2"/>
+    <!-- 学生腿部 -->
+    <rect x="-8" cy="10" width="6" height="12" fill="url(#studentGradient)" rx="2"/>
+    <rect x="2" cy="10" width="6" height="12" fill="url(#studentGradient)" rx="2"/>
+  </g>
+  
+  <!-- 家长图标 (右侧) -->
+  <g transform="translate(320, 160)">
+    <!-- 家长身体 -->
+    <circle cx="0" cy="-25" r="20" fill="url(#parentGradient)"/>
+    <!-- 家长头部 -->
+    <circle cx="0" cy="-48" r="14" fill="#FFF7E6"/>
+    <!-- 家长头发 -->
+    <path d="M-12,-48 Q0,-55 12,-48" fill="#FFA940" opacity="0.6"/>
+    <!-- 家长身体 -->
+    <rect x="-12" cy="-15" width="24" height="28" fill="url(#parentGradient)" rx="4"/>
+    <!-- 家长手臂 -->
+    <rect x="-22" cy="-8" width="10" height="18" fill="url(#parentGradient)" rx="3"/>
+    <rect x="12" cy="-8" width="10" height="18" fill="url(#parentGradient)" rx="3"/>
+    <!-- 家长腿部 -->
+    <rect x="-9" cy="13" width="7" height="14" fill="url(#parentGradient)" rx="3"/>
+    <rect x="2" cy="13" width="7" height="14" fill="url(#parentGradient)" rx="3"/>
+  </g>
+  
+  <!-- 学校图标 (上方) -->
+  <g transform="translate(250, 100)">
+    <!-- 学校建筑主体 -->
+    <rect x="-25" y="-15" width="50" height="35" fill="url(#schoolGradient)" rx="4"/>
+    <!-- 学校屋顶 -->
+    <polygon points="-28,-15 0,-25 28,-15" fill="#52C41A" opacity="0.8"/>
+    <!-- 学校钟楼 -->
+    <rect x="-8" y="-25" width="16" height="10" fill="url(#schoolGradient)" rx="2"/>
+    <circle cx="0" cy="-30" r="3" fill="#FFA940"/>
+    <!-- 学校窗户 -->
+    <rect x="-20" y="-8" width="8" height="8" fill="white" rx="1"/>
+    <rect x="-8" y="-8" width="8" height="8" fill="white" rx="1"/>
+    <rect x="4" y="-8" width="8" height="8" fill="white" rx="1"/>
+    <rect x="16" y="-8" width="8" height="8" fill="white" rx="1"/>
+    <!-- 学校大门 -->
+    <rect x="-6" y="10" width="12" height="15" fill="white" rx="2"/>
+    <!-- 学校台阶 -->
+    <rect x="-30" y="25" width="60" height="3" fill="#E0E0E0" rx="1"/>
+    <rect x="-26" y="28" width="52" height="3" fill="#D0D0D0" rx="1"/>
+    <rect x="-22" y="31" width="44" height="3" fill="#C0C0C0" rx="1"/>
+  </g>
+  
+  <!-- 支付连接符号 - 连接线体现支付关系 -->
+  <g>
+    <!-- 学生到学校的连接 -->
+    <line x1="200" y1="160" x2="230" y2="120" stroke="#409EFF" stroke-width="3" opacity="0.7" stroke-dasharray="4,2"/>
+    <!-- 家长到学校的连接 -->
+    <line x1="300" y1="160" x2="270" y2="120" stroke="#FFA940" stroke-width="3" opacity="0.7" stroke-dasharray="4,2"/>
+    <!-- 学生到家长的连接 -->
+    <line x1="210" y1="180" x2="290" y2="180" stroke="#52C41A" stroke-width="2" opacity="0.5" stroke-dasharray="3,1"/>
+  </g>
+  
+  <!-- 支付符号 -->
+  <g transform="translate(250, 200)">
+    <!-- 支付圆环 -->
+    <circle cx="0" cy="0" r="25" fill="white" stroke="#FF4D94" stroke-width="3" filter="url(#glow)"/>
+    <!-- 货币符号 -->
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FF4D94" text-anchor="middle">¥</text>
+    <!-- 支付箭头 -->
+    <path d="M-8,-8 L-3,-13 L-3,-10 L3,-10 L3,-13 L8,-8 L0,-3 Z" fill="#FF4D94" opacity="0.8"/>
+  </g>
+  
+  <!-- 品牌文字 -->
+  <text x="250" y="380" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#333" text-anchor="middle">校园支付</text>
+  <text x="250" y="405" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Campus Payment</text>
+  
+  <!-- 装饰性元素 -->
+  <circle cx="80" cy="80" r="12" fill="#FFA940" opacity="0.3"/>
+  <circle cx="420" cy="80" r="10" fill="#FF4D94" opacity="0.2"/>
+  <circle cx="80" cy="420" r="8" fill="#52C41A" opacity="0.25"/>
+  <circle cx="420" cy="420" r="14" fill="#409EFF" opacity="0.2"/>
+  
+  <!-- 几何装饰 -->
+  <polygon points="60,60 75,60 67.5,75" fill="#FFA940" opacity="0.2"/>
+  <rect x="410" y="70" width="15" height="15" fill="#52C41A" opacity="0.2" transform="rotate(45 417.5 77.5)"/>
+  <polygon points="410,430 420,440 400,440" fill="#FF4D94" opacity="0.2"/>
+  
+  <!-- 简约版Logo展示 -->
+  <g transform="translate(0, 450)">
+    <rect x="50" y="20" width="400" height="80" fill="white" rx="15" filter="url(#softShadow)"/>
+    
+    <!-- 简约版图标 -->
+    <circle cx="100" cy="60" r="25" fill="url(#logoGradient)"/>
+    <text x="100" y="68" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">¥</text>
+    
+    <!-- 连接线 -->
+    <line x1="70" y1="45" x2="130" y2="45" stroke="#409EFF" stroke-width="2" opacity="0.6"/>
+    <line x1="70" y1="75" x2="130" y2="75" stroke="#FFA940" stroke-width="2" opacity="0.6"/>
+    
+    <!-- 文字 -->
+    <text x="140" y="55" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">校园支付</text>
+    <text x="140" y="70" font-family="Arial, sans-serif" font-size="10" fill="#666">Campus Payment System</text>
+  </g>
+</svg>

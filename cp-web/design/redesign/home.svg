@@ -1,0 +1,83 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="1200" height="750" fill="#f8f9fa"/>
+  
+  <!-- 顶部导航栏 -->
+  <rect width="1200" height="60" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- Logo和标题 -->
+  <circle cx="30" cy="30" r="15" fill="#2F8CFB"/>
+  <text x="55" y="35" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">校园通后台管理系统</text>
+  
+  <!-- 用户菜单 -->
+  <rect x="1050" y="15" width="80" height="30" rx="15" fill="#ffffff" stroke="#dcdfe6" stroke-width="1"/>
+  <text x="1090" y="33" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#666" text-anchor="middle">管理员</text>
+  
+  <!-- 侧边栏 -->
+  <rect width="200" height="690" y="60" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 菜单项 -->
+  <rect x="0" y="60" width="200" height="50" fill="#2F8CFB" opacity="0.1"/>
+  <text x="20" y="90" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB" font-weight="500">🏠 主页</text>
+  
+  <text x="20" y="140" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">👥 用户管理</text>
+  <text x="20" y="190" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">🔧 角色管理</text>
+  <text x="20" y="240" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📊 消费记录</text>
+  <text x="20" y="290" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">📢 通知公告</text>
+  
+  <!-- 主内容区 -->
+  <rect x="220" y="80" width="960" height="650" fill="#ffffff" rx="4" stroke="#e4e7ed" stroke-width="1"/>
+  
+  <!-- 页面标题 -->
+  <text x="240" y="110" font-family="PingFang SC, Microsoft YaHei" font-size="18" fill="#222" font-weight="500">欢迎使用校园通后台管理系统</text>
+  
+  <!-- 统计卡片 -->
+  <rect x="240" y="130" width="220" height="100" rx="4" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="260" cy="155" r="8" fill="#67c23a" opacity="0.2"/>
+  <text x="280" y="160" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">今日交易额</text>
+  <text x="260" y="185" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#222" font-weight="500">¥23,450</text>
+  <text x="260" y="205" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#67c23a">+12.5%</text>
+  
+  <rect x="480" y="130" width="220" height="100" rx="4" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="500" cy="155" r="8" fill="#409eff" opacity="0.2"/>
+  <text x="520" y="160" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">活跃用户</text>
+  <text x="500" y="185" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#222" font-weight="500">8,230</text>
+  <text x="500" y="205" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#409eff">+8.2%</text>
+  
+  <rect x="720" y="130" width="220" height="100" rx="4" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <circle cx="740" cy="155" r="8" fill="#e6a23c" opacity="0.2"/>
+  <text x="760" y="160" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666">新注册用户</text>
+  <text x="740" y="185" font-family="PingFang SC, Microsoft YaHei" font-size="24" fill="#222" font-weight="500">126</text>
+  <text x="740" y="205" font-family="PingFang SC, Microsoft YaHei" font-size="12" fill="#e6a23c">-2.1%</text>
+  
+  <!-- 图表区域 -->
+  <rect x="240" y="250" width="460" height="300" rx="4" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="260" y="275" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">交易趋势</text>
+  <line x1="260" y1="300" x2="700" y2="300" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="320" x2="700" y2="320" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="340" x2="700" y2="340" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="360" x2="700" y2="360" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="380" x2="700" y2="380" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="400" x2="700" y2="400" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="420" x2="700" y2="420" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="440" x2="700" y2="440" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="460" x2="700" y2="460" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="480" x2="700" y2="480" stroke="#e4e7ed" stroke-width="1"/>
+  <line x1="260" y1="500" x2="700" y2="500" stroke="#e4e7ed" stroke-width="1"/>
+  <polyline points="280,480 320,460 360,440 400,450 440,430 480,420 520,400 560,410 600,390 640,380 680,370" fill="none" stroke="#2F8CFB" stroke-width="2"/>
+  
+  <rect x="720" y="250" width="460" height="300" rx="4" fill="#ffffff" stroke="#e4e7ed" stroke-width="1"/>
+  <text x="740" y="275" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">用户分布</text>
+  <circle cx="850" cy="400" r="80" fill="#2F8CFB" opacity="0.1"/>
+  <circle cx="850" cy="400" r="60" fill="#ffffff"/>
+  <text x="850" y="395" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#666" text-anchor="middle">本科生</text>
+  <text x="850" y="415" font-family="PingFang SC, Microsoft YaHei" font-size="20" fill="#222" font-weight="500" text-anchor="middle">68%</text>
+  
+  <!-- 快速操作 -->
+  <text x="240" y="580" font-family="PingFang SC, Microsoft YaHei" font-size="16" fill="#222" font-weight="500">快速操作</text>
+  <rect x="240" y="590" width="100" height="36" rx="4" fill="#2F8CFB"/>
+  <text x="290" y="612" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#ffffff" text-anchor="middle">新增用户</text>
+  
+  <rect x="360" y="590" width="100" height="36" rx="4" fill="#ffffff" stroke="#2F8CFB" stroke-width="1"/>
+  <text x="410" y="612" font-family="PingFang SC, Microsoft YaHei" font-size="14" fill="#2F8CFB" text-anchor="middle">导出数据</text>
+</svg>

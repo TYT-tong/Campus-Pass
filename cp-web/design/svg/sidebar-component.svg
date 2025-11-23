@@ -1,0 +1,156 @@
+<svg width="240" height="600" viewBox="0 0 240 600" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+  <!-- 定义阴影效果 -->
+  <defs>
+    <filter id="sidebarShadow" x="0" y="0" width="100%" height="100%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="4" dy="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="activeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E9FAF5"/>
+      <stop offset="100%" stop-color="#F7F8FC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 侧边栏背景 -->
+  <rect width="240" height="600" fill="#FFFFFF" filter="url(#sidebarShadow)"/>
+
+  <!-- Logo区域 -->
+  <g transform="translate(20 20)">
+    <!-- Logo图标 -->
+    <circle cx="20" cy="20" r="20" fill="#2DCDA3"/>
+    <path d="M15 15 L25 15 L20 25 Z" fill="#FFFFFF"/>
+    <path d="M12 20 L28 20 L20 32 Z" fill="#FFFFFF" opacity="0.7"/>
+    <!-- Logo文字 -->
+    <text x="45" y="28" font-size="18" font-weight="bold" fill="#303133">校园通后台</text>
+  </g>
+
+  <!-- 用户区域 -->
+  <g transform="translate(20 80)">
+    <!-- 用户头像 -->
+    <circle cx="20" cy="20" r="18" fill="#F7F8FC" stroke="#EBEEF5" stroke-width="1"/>
+    <circle cx="20" cy="20" r="16" fill="#2DCDA3" opacity="0.1"/>
+    <text x="20" y="25" font-size="12" fill="#2DCDA3" text-anchor="middle">小</text>
+    <!-- 用户信息 -->
+    <text x="45" y="18" font-size="14" font-weight="500" fill="#303133">小宇宙</text>
+    <text x="45" y="32" font-size="12" fill="#909399">超级管理员</text>
+  </g>
+
+  <!-- 分割线 -->
+  <line x1="20" y1="130" x2="220" y2="130" stroke="#EBEEF5" stroke-width="1"/>
+
+  <!-- 导航菜单 -->
+  <g transform="translate(0 150)" font-size="14">
+    <!-- 主页菜单项 -->
+    <g transform="translate(0 0)">
+      <rect width="240" height="48" rx="0" fill="transparent"/>
+      <!-- 图标 -->
+      <g transform="translate(20 12)">
+        <rect width="24" height="24" rx="6" fill="#F7F8FC"/>
+        <path d="M6 12 L12 6 L18 12 V20 H14 V16 H10 V20 H6 Z" fill="#909399" transform="translate(3 2) scale(0.8)"/>
+      </g>
+      <!-- 文字 -->
+      <text x="55" y="30" fill="#303133">主页</text>
+      <text x="55" y="45" fill="#909399" font-size="10">Dashboard</text>
+    </g>
+
+    <!-- 用户管理菜单项 -->
+    <g transform="translate(0 58)">
+      <rect width="240" height="48" rx="0" fill="transparent"/>
+      <!-- 图标 -->
+      <g transform="translate(20 12)">
+        <rect width="24" height="24" rx="6" fill="#F7F8FC"/>
+        <path d="M12 12 c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6zm0 2c-4.42 0-8 1.79-8 4v2h16v-2c0-2.21-3.58-4-8-4z" fill="#909399" transform="translate(6 4) scale(0.7)"/>
+      </g>
+      <!-- 文字 -->
+      <text x="55" y="30" fill="#303133">用户管理</text>
+      <text x="55" y="45" fill="#909399" font-size="10">User Management</text>
+    </g>
+
+    <!-- 角色管理菜单项 -->
+    <g transform="translate(0 116)">
+      <rect width="240" height="48" rx="0" fill="transparent"/>
+      <!-- 图标 -->
+      <g transform="translate(20 12)">
+        <rect width="24" height="24" rx="6" fill="#F7F8FC"/>
+        <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="#909399" transform="translate(2 2) scale(0.8)"/>
+      </g>
+      <!-- 文字 -->
+      <text x="55" y="30" fill="#303133">角色管理</text>
+      <text x="55" y="45" fill="#909399" font-size="10">Role Management</text>
+    </g>
+
+    <!-- 消费记录菜单项 (Active) -->
+    <g transform="translate(0 174)">
+      <!-- 背景高亮 -->
+      <rect width="240" height="48" rx="0" fill="url(#activeGradient)"/>
+      <!-- 左侧激活条 -->
+      <rect x="0" y="0" width="4" height="48" rx="2" fill="#2DCDA3"/>
+      <!-- 图标 -->
+      <g transform="translate(20 12)">
+        <rect width="24" height="24" rx="6" fill="#E9FAF5"/>
+        <path d="M18 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H6V8h12v12zM9 15h6v2H9z" fill="#2DCDA3" transform="translate(3 3) scale(0.8)"/>
+      </g>
+      <!-- 文字 -->
+      <text x="55" y="30" fill="#2DCDA3" font-weight="600">消费记录查询</text>
+      <text x="55" y="45" fill="#2DCDA3" font-size="10">Transaction Records</text>
+      <!-- 子菜单箭头 -->
+      <path d="M7 10l5 5 5-5z" fill="#2DCDA3" transform="translate(210 20) scale(0.8)"/>
+    </g>
+
+    <!-- 通知公告菜单项 -->
+    <g transform="translate(0 232)">
+      <rect width="240" height="48" rx="0" fill="transparent"/>
+      <!-- 图标 -->
+      <g transform="translate(20 12)">
+        <rect width="24" height="24" rx="6" fill="#F7F8FC"/>
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" fill="#909399" transform="translate(2 2) scale(0.8)"/>
+      </g>
+      <!-- 文字 -->
+      <text x="55" y="30" fill="#303133">通知公告</text>
+      <text x="55" y="45" fill="#909399" font-size="10">Notifications</text>
+    </g>
+
+    <!-- 系统设置菜单项 -->
+    <g transform="translate(0 290)">
+      <rect width="240" height="48" rx="0" fill="transparent"/>
+      <!-- 图标 -->
+      <g transform="translate(20 12)">
+        <rect width="24" height="24" rx="6" fill="#F7F8FC"/>
+        <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z" fill="#909399" transform="translate(2 2) scale(0.8)"/>
+      </g>
+      <!-- 文字 -->
+      <text x="55" y="30" fill="#303133">系统设置</text>
+      <text x="55" y="45" fill="#909399" font-size="10">System Settings</text>
+    </g>
+  </g>
+
+  <!-- 底部区域 -->
+  <g transform="translate(0 520)">
+    <!-- 分割线 -->
+    <line x1="20" y1="0" x2="220" y2="0" stroke="#EBEEF5" stroke-width="1"/>
+    
+    <!-- 版本信息 -->
+    <text x="20" y="25" font-size="12" fill="#909399">版本 v1.2.0</text>
+    <text x="20" y="45" font-size="10" fill="#C0C4CC">最后更新: 2025-11-14</text>
+    
+    <!-- 退出按钮 -->
+    <g transform="translate(20 70)">
+      <rect width="200" height="36" rx="8" fill="#F7F8FC" stroke="#EBEEF5" stroke-width="1"/>
+      <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z" fill="#F56C6C" transform="translate(20 6) scale(0.8)"/>
+      <text x="50" y="23" font-size="14" fill="#F56C6C">退出登录</text>
+    </g>
+  </g>
+
+  <!-- 悬停效果示例 -->
+  <g transform="translate(0 290)" opacity="0.3">
+    <rect width="240" height="48" rx="0" fill="#F7F8FC"/>
+    <text x="30" y="30" font-size="12" fill="#909399">悬停效果示例</text>
+  </g>
+</svg>
